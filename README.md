@@ -1,4 +1,1 @@
 # NBUY
-
-
-Wissen Akademie
