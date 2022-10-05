@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\bin\Debug\net6.0\Project09_IfConditions.exe
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\bin\Debug\net6.0\Project09_IfConditions.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\bin\Debug\net6.0\Project09_IfConditions.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\bin\Debug\net6.0\Project09_IfConditions.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\bin\Debug\net6.0\Project09_IfConditions.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\refint\Project09_IfConditions.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\Project09_IfConditions.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_01\Project09_IfConditions\obj\Debug\net6.0\ref\Project09_IfConditions.dll
