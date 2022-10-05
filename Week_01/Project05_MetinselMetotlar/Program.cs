@@ -91,9 +91,28 @@ class Program
         //Console.WriteLine($"C harfi {adres} adresinde {siraNo}. sıradadır.");
 
 
-        string adres = "Selami Ali Mahallesi, Can Sokak, Numara: 6, Kadıköy/İstanbul";
-        string aranacakIfade = "Can Sokak";
-        int siraNo = adres.ToLower().IndexOf(aranacakIfade.ToLower());
-        Console.WriteLine($"{aranacakIfade} ifadesi {adres} içinde {siraNo}. sıradadır.");
+
+        //string adres = "Selami Ali Mahallesi, Can Sokak, Numara: 6, Kadıköy/İstanbul";
+        //string aranacakIfade = "Can Sokak";
+        //int siraNo = adres.ToLower().IndexOf(aranacakIfade.ToLower());
+        //Console.WriteLine($"{aranacakIfade} ifadesi {adres} içinde {siraNo}. sıradadır.");
+
+
+
+        //string metin = "Wissen Akademie";
+        //Console.WriteLine($"Metnin ilk hali: {metin}");
+        //Console.WriteLine($"Akademie ifadesi silindikten sonraki hali: {metin.Remove(6)}");  //boşluğu da sildik.
+        //Console.WriteLine($"Aka ifadesi silindikten sonraki hali: {metin.Remove(7, 3)}");
+
+
+
+        ////replace
+        //string urunAd = "IPhone 13 Pro"; //iphone-13-pro çevir
+        //// string sonuc1 = urunAd.Replace(' ', '-');               //hatalı sonuç. char null olmaz.
+        //// string sonuc = (urunAd.Replace(" ", "-")).ToLower();    //string içi boş olabilir.
+        //string sonuc = urunAd.ToLower().Replace(" ", "-");
+        //Console.WriteLine(sonuc);
+        //string sonuc2 = urunAd.Replace("IPhone", "Samsung");
+        //Console.WriteLine(sonuc2);
     }
 }

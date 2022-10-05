@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Project07_TarihMetotları/1.0.0": {
+        "runtime": {
+          "Project07_TarihMetotları.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project07_TarihMetotları/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
