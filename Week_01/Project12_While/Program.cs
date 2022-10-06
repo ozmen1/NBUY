@@ -111,18 +111,34 @@ class Program
 
 
 
-        // ///ÖDEV. Kodları düzelt!
-        // ///klavyeden exit yazılana kadar sayı almaya devam eden ve bu sayıların toplamını exit
-        // //yazılınca ekrana yazan program. do-while ile.
-        // string girilenDeger;
-        // int sayac = 1;
-        // int toplam = 0;
-        // do
-        // {
-        //     System.Console.Write($"{sayac}. sayıyı giriniz: ");
-        //     girilenDeger = Console.ReadLine();
-        //     if(girilenDeger != "exit")    toplam += Convert.ToInt32(girilenDeger);;
-        // } while (girilenDeger != "exit");
+        ///ÖDEV. Kodları düzelt!
+        ///klavyeden exit yazılana kadar sayı almaya devam eden ve bu sayıların toplamını exit
+        //yazılınca ekrana yazan program. do-while ile.
+        string girilenDeger = " ";
+        int sayac = 1;
+        int toplam = 0;
+        do
+        {
+            try
+            {
+                if (girilenDeger != "exit")
+                {
+                    System.Console.Write($"{sayac}. sayıyı giriniz: ");
+                    girilenDeger = Console.ReadLine();
+                    toplam += Convert.ToInt32(girilenDeger);
+                    sayac++;
+                }
+            }
+            catch (System.Exception ex)
+            {
+                System.Console.WriteLine("Lütfen geçerli bir değer giriniz.");
+                throw;
+            }
+        } while (girilenDeger != "exit");
+        System.Console.WriteLine(toplam);
+
+
+
 
 
 
@@ -140,71 +156,71 @@ class Program
 
 
 
-        //OYUN: Uygulamanın rastgele üreteceği bir sayıyı kullanıcının tahmin etmesini isteyeceğiz.
-        //Rastgele üretilecek sayı 1-101 arasında olsun. (100 dahil 101 dahil değil)
-        //Kullanıcı rastgele sayıdan küçük veya büyük bir sayı girdiğinde kullanıcıya uygun bir mesaj verilsin.
-        //Doğru sayıyı tahmin edene kadar uygulama çalışsın.
-        //Kullanıcı doğru sayıyı tahmin ettiyse ya da 5 hakkını kullandıysa uygulama sonra ersin.
-        //döngünün içerisinde tebrikler veya kaybettiniz yazmakla uğraşma. döngüde hak hesabı ile uğraş. sadece hakkı dolmadığı sürece döngüde kal.
-        Random rnd = new Random();
-        int uretilenSayi = rnd.Next(1, 101);
-        System.Console.WriteLine($"HİLE: {uretilenSayi}"); //testi kolay yapmak için hile yaptık.
-        System.Console.WriteLine("******************");
-        int tahminEdilenSayi; //döngüde 5-10 kere tekrar değişken tanımlamaya lüzum olmadığı için döngünün üstüne yazdık.
-        int hak = 1; //kullanıcının o sırada kaçıncı hakkını kullandığı bilgisi bunda tutulacak.
-        int hakSiniri = 5; //kullanıcının toplam kaç hakka sahip olduğu bilgisi.
+        // //OYUN: Uygulamanın rastgele üreteceği bir sayıyı kullanıcının tahmin etmesini isteyeceğiz.
+        // //Rastgele üretilecek sayı 1-101 arasında olsun. (100 dahil 101 dahil değil)
+        // //Kullanıcı rastgele sayıdan küçük veya büyük bir sayı girdiğinde kullanıcıya uygun bir mesaj verilsin.
+        // //Doğru sayıyı tahmin edene kadar uygulama çalışsın.
+        // //Kullanıcı doğru sayıyı tahmin ettiyse ya da 5 hakkını kullandıysa uygulama sonra ersin.
+        // //döngünün içerisinde tebrikler veya kaybettiniz yazmakla uğraşma. döngüde hak hesabı ile uğraş. sadece hakkı dolmadığı sürece döngüde kal.
+        // Random rnd = new Random();
+        // int uretilenSayi = rnd.Next(1, 101);
+        // System.Console.WriteLine($"HİLE: {uretilenSayi}"); //testi kolay yapmak için hile yaptık.
+        // System.Console.WriteLine("******************");
+        // int tahminEdilenSayi; //döngüde 5-10 kere tekrar değişken tanımlamaya lüzum olmadığı için döngünün üstüne yazdık.
+        // int hak = 1; //kullanıcının o sırada kaçıncı hakkını kullandığı bilgisi bunda tutulacak.
+        // int hakSiniri = 5; //kullanıcının toplam kaç hakka sahip olduğu bilgisi.
+
+        // // do
+        // // {
+        // //     System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");  //hak++ yazmamızın sebebi ilk çalıştırmada hak=1-1=0 olmasın diye
+        // //     tahminEdilenSayi = Convert.ToInt32(Console.ReadLine());
+        // //     if (hak == hakSiniri && uretilenSayi != tahminEdilenSayi)
+        // //     {
+        // //         System.Console.WriteLine("Kaybettiniz");
+        // //         break;
+        // //     }
+        // //     if (tahminEdilenSayi > uretilenSayi)
+        // //     {
+        // //         System.Console.WriteLine("Büyük bir değer girdiniz. Daha küçük bir değer girerek yeniden deneyiniz!");
+        // //     }
+        // //     else if (uretilenSayi > tahminEdilenSayi)
+        // //     {
+        // //         System.Console.WriteLine("Küçük bir değer girdiniz. Daha büyük bir değer girerek yeniden deneyiniz!");
+        // //     }
+        // //     else
+        // //     {
+        // //         System.Console.WriteLine("Tebrikler!");
+        // //     }
+        // //     hak++;
+        // // } while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
 
         // do
         // {
-        //     System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");  //hak++ yazmamızın sebebi ilk çalıştırmada hak=1-1=0 olmasın diye
+        //     System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");
         //     tahminEdilenSayi = Convert.ToInt32(Console.ReadLine());
-        //     if (hak == hakSiniri && uretilenSayi != tahminEdilenSayi)
-        //     {
-        //         System.Console.WriteLine("Kaybettiniz");
-        //         break;
-        //     }
         //     if (tahminEdilenSayi > uretilenSayi)
         //     {
-        //         System.Console.WriteLine("Büyük bir değer girdiniz. Daha küçük bir değer girerek yeniden deneyiniz!");
+        //         System.Console.WriteLine("büyük girdin");
         //     }
-        //     else if (uretilenSayi > tahminEdilenSayi)
+        //     else if (tahminEdilenSayi < uretilenSayi)
         //     {
-        //         System.Console.WriteLine("Küçük bir değer girdiniz. Daha büyük bir değer girerek yeniden deneyiniz!");
+        //         System.Console.WriteLine("küçük girdin");
+        //     }
+        //     if (tahminEdilenSayi != uretilenSayi)
+        //     {
+        //         hak++;
+        //         if (hak <= hakSiniri)
+        //         {
+        //             System.Console.WriteLine("Kaybettin.");
+        //         }
         //     }
         //     else
         //     {
-        //         System.Console.WriteLine("Tebrikler!");
+        //         System.Console.WriteLine("Kazandın.");
         //     }
-        //     hak++;
-        // } while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
+        // }
+        // while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
 
-        do
-        {
-            System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");
-            tahminEdilenSayi = Convert.ToInt32(Console.ReadLine());
-            if (tahminEdilenSayi > uretilenSayi)
-            {
-                System.Console.WriteLine("büyük girdin");
-            }
-            else if (tahminEdilenSayi < uretilenSayi)
-            {
-                System.Console.WriteLine("küçük girdin");
-            }
-            if (tahminEdilenSayi != uretilenSayi)
-            {
-                hak++;
-                if (hak <= hakSiniri)
-                {
-                    System.Console.WriteLine("Kaybettin.");
-                }
-            }
-            else
-            {
-                System.Console.WriteLine("Kazandın.");
-            }
-        }
-        while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
-
-        //Eğer program bu satıra gelmiş ise ya doğru tahminde bulunulmuştur ya da hak sonra ermiştir.
+        // //Eğer program bu satıra gelmiş ise ya doğru tahminde bulunulmuştur ya da hak sonra ermiştir.
     }
 }

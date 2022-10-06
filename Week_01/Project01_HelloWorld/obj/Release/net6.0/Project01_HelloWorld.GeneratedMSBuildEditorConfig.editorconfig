@@ -6,5 +6,5 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Project12_While
-build_property.ProjectDir = C:\Users\ozmen\Documents\GitHub\NBUY\Week_01\Project12_While\
+build_property.RootNamespace = Project01_HelloWorld
+build_property.ProjectDir = C:\Users\ozmen\Documents\GitHub\NBUY\Week_01\Project01_HelloWorld\
