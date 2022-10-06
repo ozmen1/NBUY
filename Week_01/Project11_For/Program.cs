@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            //döngülerde i kullanılması bir alışkanlık. şart değil.
             //for (int i = 0; i < 5; i++)
             //{
             //    Console.WriteLine(i+1 + "." + "merhaba");
