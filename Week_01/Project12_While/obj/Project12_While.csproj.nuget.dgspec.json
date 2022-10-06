@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project11_For\\Project11_For.csproj": {}
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project11_For\\Project11_For.csproj": {
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project11_For\\Project11_For.csproj",
-        "projectName": "Project11_For",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project11_For\\Project11_For.csproj",
+        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj",
+        "projectName": "Project12_While",
+        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj",
         "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project11_For\\obj\\",
+        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
