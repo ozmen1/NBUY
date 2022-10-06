@@ -67,7 +67,7 @@
             // 1 ile 10 arasındaki çift sayıların toplamını ayrı tek sayıların toplamını ayrı bul.
             int ciftToplam = 0;
             int tekToplam = 0;
-            for (int i = 0; i <= 10; i = i + 2)
+            for (int i = 1; i <= 10; i++)
             {
                 if (i % 2 != 0)
                 {
