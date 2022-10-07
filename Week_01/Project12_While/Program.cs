@@ -10,12 +10,16 @@ class Program
 
 
 
+
+
         // //bu örnekte sonsuz döngü (kısır döngü) oluştu.
         // int sayac = 1;
         // while (sayac <= 5)
         // {
         //     System.Console.WriteLine("Merhaba Dünya!");
         // }
+
+
 
 
 
@@ -27,6 +31,8 @@ class Program
         //     System.Console.WriteLine("Merhaba Dünya!");
         //     sayac++;
         // }
+
+
 
 
 
@@ -46,6 +52,8 @@ class Program
         //     sayac++;
         // }
         // System.Console.WriteLine(toplam);
+
+
 
 
 
@@ -78,6 +86,7 @@ class Program
 
 
 
+
         // //soru: klavyeden exit yazılana kadar isim girilmesini isteyen uygulama.
         // //çözüm 1.
         // string isim = "";
@@ -95,6 +104,7 @@ class Program
 
 
 
+
         // //en az 1 kez döngünün içindekilerini yazmak için. do while döngüsü kullanılır.
         // //çözüm2.
         // string isim;
@@ -104,6 +114,8 @@ class Program
         //     isim = Console.ReadLine();
         // } while (isim != "exit");
         // System.Console.WriteLine("Program sona erdi...");
+
+
 
 
 
@@ -144,6 +156,7 @@ class Program
 
 
 
+
         // //rastgele değer üretme
         // Random rastgele = new Random();     //nesne yarattık. Random tipinde rastgele değişkeni/nesnesi yarattık.
         // int rastgeleSayi = rastgele.Next();
@@ -156,71 +169,68 @@ class Program
 
 
 
-        // //OYUN: Uygulamanın rastgele üreteceği bir sayıyı kullanıcının tahmin etmesini isteyeceğiz.
-        // //Rastgele üretilecek sayı 1-101 arasında olsun. (100 dahil 101 dahil değil)
-        // //Kullanıcı rastgele sayıdan küçük veya büyük bir sayı girdiğinde kullanıcıya uygun bir mesaj verilsin.
-        // //Doğru sayıyı tahmin edene kadar uygulama çalışsın.
-        // //Kullanıcı doğru sayıyı tahmin ettiyse ya da 5 hakkını kullandıysa uygulama sonra ersin.
-        // //döngünün içerisinde tebrikler veya kaybettiniz yazmakla uğraşma. döngüde hak hesabı ile uğraş. sadece hakkı dolmadığı sürece döngüde kal.
-        // Random rnd = new Random();
-        // int uretilenSayi = rnd.Next(1, 101);
-        // System.Console.WriteLine($"HİLE: {uretilenSayi}"); //testi kolay yapmak için hile yaptık.
-        // System.Console.WriteLine("******************");
-        // int tahminEdilenSayi; //döngüde 5-10 kere tekrar değişken tanımlamaya lüzum olmadığı için döngünün üstüne yazdık.
-        // int hak = 1; //kullanıcının o sırada kaçıncı hakkını kullandığı bilgisi bunda tutulacak.
-        // int hakSiniri = 5; //kullanıcının toplam kaç hakka sahip olduğu bilgisi.
 
-        // // do
-        // // {
-        // //     System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");  //hak++ yazmamızın sebebi ilk çalıştırmada hak=1-1=0 olmasın diye
-        // //     tahminEdilenSayi = Convert.ToInt32(Console.ReadLine());
-        // //     if (hak == hakSiniri && uretilenSayi != tahminEdilenSayi)
-        // //     {
-        // //         System.Console.WriteLine("Kaybettiniz");
-        // //         break;
-        // //     }
-        // //     if (tahminEdilenSayi > uretilenSayi)
-        // //     {
-        // //         System.Console.WriteLine("Büyük bir değer girdiniz. Daha küçük bir değer girerek yeniden deneyiniz!");
-        // //     }
-        // //     else if (uretilenSayi > tahminEdilenSayi)
-        // //     {
-        // //         System.Console.WriteLine("Küçük bir değer girdiniz. Daha büyük bir değer girerek yeniden deneyiniz!");
-        // //     }
-        // //     else
-        // //     {
-        // //         System.Console.WriteLine("Tebrikler!");
-        // //     }
-        // //     hak++;
-        // // } while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
 
+        //OYUN: Uygulamanın rastgele üreteceği bir sayıyı kullanıcının tahmin etmesini isteyeceğiz.
+        //Rastgele üretilecek sayı 1-101 arasında olsun. (100 dahil 101 dahil değil)
+        //Kullanıcı rastgele sayıdan küçük veya büyük bir sayı girdiğinde kullanıcıya uygun bir mesaj verilsin.
+        //Doğru sayıyı tahmin edene kadar uygulama çalışsın.
+        //Kullanıcı doğru sayıyı tahmin ettiyse ya da 5 hakkını kullandıysa uygulama sonra ersin.
+        //döngünün içerisinde tebrikler veya kaybettiniz yazmakla uğraşma. döngüde hak hesabı ile uğraş. sadece hakkı dolmadığı sürece döngüde kal.
+        Random rnd = new Random();
+        int uretilenSayi = rnd.Next(1, 101);
+        System.Console.WriteLine($"HİLE: {uretilenSayi}"); //testi kolay yapmak için hile yaptık.
+        System.Console.WriteLine("******************");
+        int tahminEdilenSayi; //döngüde 5-10 kere tekrar değişken tanımlamaya lüzum olmadığı için döngünün üstüne yazdık.
+        int hak = 1; //kullanıcının o sırada kaçıncı hakkını kullandığı bilgisi bunda tutulacak.
+        int hakSiniri = 5; //kullanıcının toplam kaç hakka sahip olduğu bilgisi.
+        string mesaj = "";
         // do
         // {
-        //     System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");
+        //     System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");  //hak++ yazmamızın sebebi ilk çalıştırmada hak=1-1=0 olmasın diye
         //     tahminEdilenSayi = Convert.ToInt32(Console.ReadLine());
+        //     if (hak == hakSiniri && uretilenSayi != tahminEdilenSayi)
+        //     {
+        //         System.Console.WriteLine("Kaybettiniz");
+        //         break;
+        //     }
         //     if (tahminEdilenSayi > uretilenSayi)
         //     {
-        //         System.Console.WriteLine("büyük girdin");
+        //         System.Console.WriteLine("Büyük bir değer girdiniz. Daha küçük bir değer girerek yeniden deneyiniz!");
         //     }
-        //     else if (tahminEdilenSayi < uretilenSayi)
+        //     else if (uretilenSayi > tahminEdilenSayi)
         //     {
-        //         System.Console.WriteLine("küçük girdin");
-        //     }
-        //     if (tahminEdilenSayi != uretilenSayi)
-        //     {
-        //         hak++;
-        //         if (hak <= hakSiniri)
-        //         {
-        //             System.Console.WriteLine("Kaybettin.");
-        //         }
+        //         System.Console.WriteLine("Küçük bir değer girdiniz. Daha büyük bir değer girerek yeniden deneyiniz!");
         //     }
         //     else
         //     {
-        //         System.Console.WriteLine("Kazandın.");
+        //         System.Console.WriteLine("Tebrikler!");
         //     }
-        // }
-        // while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
+        //     hak++;
+        // } while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
+        do
+        {
+            System.Console.Write($"{hak}. tahmininizi giriniz(1-100 arasında): ");
+            tahminEdilenSayi = Convert.ToInt32(Console.ReadLine());
+            if (tahminEdilenSayi > uretilenSayi)
+            {
+                mesaj = "Büyük girdin!";
+            }
+            else if (tahminEdilenSayi < uretilenSayi)
+            {
+                mesaj = "Küçük girdin!";
+            }
+            if (tahminEdilenSayi != uretilenSayi)
+            {
+                hak++;
+                if (hak <= hakSiniri) System.Console.WriteLine(mesaj); //son mesajda küçük girdin büyük girdin mesajına gerek yok.
+            }
+        }
+        while (tahminEdilenSayi != uretilenSayi && hak <= hakSiniri);
+        mesaj = tahminEdilenSayi == uretilenSayi ? "Kazandınız" : "Kaybettiniz";  //ternery if
+        System.Console.WriteLine(mesaj);
+        //Eğer program bu satıra gelmiş ise ya doğru tahminde bulunulmuştur ya da hak sonra ermiştir.
+        //KESİNLİKLE BU PROGRAM ÇOK ÇEŞİTLİ/FARKLI ALGORİTMALARLA ÇÖZÜLEBİLİR!!!
 
-        // //Eğer program bu satıra gelmiş ise ya doğru tahminde bulunulmuştur ya da hak sonra ermiştir.
     }
 }

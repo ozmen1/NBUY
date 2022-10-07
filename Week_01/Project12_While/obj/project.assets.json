@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ozmen\\.nuget\\packages\\": {}
+    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj",
+      "projectUniqueName": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj",
       "projectName": "Project12_While",
-      "projectPath": "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj",
-      "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\obj\\",
+      "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\Project12_While.csproj",
+      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_01\\Project12_While\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,8 +51,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -61,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
