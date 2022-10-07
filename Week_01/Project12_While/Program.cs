@@ -111,31 +111,31 @@ class Program
 
 
 
-        ///ÖDEV. Kodları düzelt!
-        ///klavyeden exit yazılana kadar sayı almaya devam eden ve bu sayıların toplamını exit
-        //yazılınca ekrana yazan program. do-while ile.
-        string girilenDeger = " ";
-        int sayac = 1;
-        int toplam = 0;
-        do
-        {
-            try
-            {
-                if (girilenDeger != "exit")
-                {
-                    System.Console.Write($"{sayac}. sayıyı giriniz: ");
-                    girilenDeger = Console.ReadLine();
-                    toplam += Convert.ToInt32(girilenDeger);
-                    sayac++;
-                }
-            }
-            catch (System.Exception ex)
-            {
-                System.Console.WriteLine("Lütfen geçerli bir değer giriniz.");
-                throw;
-            }
-        } while (girilenDeger != "exit");
-        System.Console.WriteLine(toplam);
+        // ///ÖDEV. Kodları düzelt!
+        // ///klavyeden exit yazılana kadar sayı almaya devam eden ve bu sayıların toplamını exit
+        // //yazılınca ekrana yazan program. do-while ile.
+        // string girilenDeger = " ";
+        // int sayac = 1;
+        // int toplam = 0;
+        // do
+        // {
+        //     try
+        //     {
+        //         if (girilenDeger != "exit")
+        //         {
+        //             System.Console.Write($"{sayac}. sayıyı giriniz: ");
+        //             girilenDeger = Console.ReadLine();
+        //             toplam += Convert.ToInt32(girilenDeger);
+        //             sayac++;
+        //         }
+        //     }
+        //     catch (System.Exception ex)
+        //     {
+        //         System.Console.WriteLine("Lütfen geçerli bir değer giriniz.");
+        //         throw;
+        //     }
+        // } while (girilenDeger != "exit");
+        // System.Console.WriteLine(toplam);
 
 
 
