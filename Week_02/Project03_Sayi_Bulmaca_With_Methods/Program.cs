@@ -5,6 +5,9 @@
         static void Main(string[] args)
         {
             //sayı bulmaca oyununu, yeni öğrendiğimiz methods konusu bağlamında yeniden hazırlayınız.
+            //5 tercih hakkı olsun
+            //puan sistemi olsun (1. tercihinde 50, bilmedikçe 10'ar 10'ar düşsün)
+            //oyunu kaybettiğinde ya da kazandığında yeniden oynamak istiyorsa oynayabilsin.
 
             Random rnd = new Random();
             int uretilenSayi = rnd.Next(1, 101);
