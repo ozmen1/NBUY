@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Project03_Sayi_Bulmaca_With_Methods/1.0.0": {
+        "runtime": {
+          "Project03_Sayi_Bulmaca_With_Methods.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Project03_Sayi_Bulmaca_With_Methods/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
