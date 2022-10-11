@@ -1,0 +1,15 @@
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.csproj.AssemblyReference.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.AssemblyInfoInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.AssemblyInfo.cs
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.csproj.CoreCompileInputs.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\bin\Debug\net6.0\Project08_Abstract.exe
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\bin\Debug\net6.0\Project08_Abstract.deps.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\bin\Debug\net6.0\Project08_Abstract.runtimeconfig.json
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\bin\Debug\net6.0\Project08_Abstract.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\bin\Debug\net6.0\Project08_Abstract.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\refint\Project08_Abstract.dll
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.pdb
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\Project08_Abstract.genruntimeconfig.cache
+C:\Users\SABAH\Documents\GitHub\NBUY\Week_02\Project08_Abstract\obj\Debug\net6.0\ref\Project08_Abstract.dll

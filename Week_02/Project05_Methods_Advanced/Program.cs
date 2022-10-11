@@ -1,4 +1,6 @@
-﻿namespace Project05_Methods_Advanced
+﻿using System.Collections;
+
+namespace Project05_Methods_Advanced
 {
     internal class Program
     {
@@ -27,8 +29,16 @@
             Person person5 = new Person() { Name = "Ceyda", Year = 1990 };
 
             Console.WriteLine(person1.Intro());
+            //Tüm kişilerin intro bilgilerini ekrana yazdırın.
+            Person[] persons = { person1, person2, person3, person4, person5 };
+
+            foreach (var person in persons)
+            {
+                Console.WriteLine(person.Intro());
+            }
 
             Console.ReadLine();
+            //C#'ta her ŞEY bir NESNEDİR!
         }
     }
 }
