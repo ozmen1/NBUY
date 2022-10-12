@@ -1,6 +1,7 @@
 ﻿namespace Project09_Interface
 {
     //eğer her şeyin abstract olması gerekiyorsa, interface kullanalım!
+    //BURAYA DERSTEKİ AÇIKLAMALAR GELECEK!
     interface IPersonel
     {
         public string Departman { get; set; }
@@ -49,24 +50,55 @@
             Console.WriteLine($"Ad soyad: {AdSoyad} Departman: {Departman}");        
         }
     }
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            /*bir abstract classtan, miras alan classta
-             * eğer base class'ta abstract methodlar varsa, mutlaka override edilmeli
-             * eğer base class'ta abstract olmayan methodlar varsa, onlar aynen kullanılabilir.
-             * ancak bazen, miras alınan classtaki her metodun, içinin dolu hallerini yazmak zorunlu olsun isteriz.
-             * yani bir nevi hepsi abstract olsun isteriz. bunu yapmak yerine, miras alınan class'ı class değil
-             * interface şeklinde tanımlarız!
-             * */
+            ///*bir abstract classtan, miras alan classta
+            // * eğer base class'ta abstract methodlar varsa, mutlaka override edilmeli
+            // * eğer base class'ta abstract olmayan methodlar varsa, onlar aynen kullanılabilir.
+            // * ancak bazen, miras alınan classtaki her metodun, içinin dolu hallerini yazmak zorunlu olsun isteriz.
+            // * yani bir nevi hepsi abstract olsun isteriz. bunu yapmak yerine, miras alınan class'ı class değil
+            // * interface şeklinde tanımlarız!
+            // * */
 
-            //IPersonel personel = new IPersonel(); //hatalı kullanım!
+            ////IPersonel personel = new IPersonel(); //hatalı kullanım!
 
-            Yonetici yonetici1 = new Yonetici();
-            Yonetici yonetici2 = new Yonetici("Alex de Souza", "Rio de Jenario", "5000", "Futbol");
-            Yonetici yonetici3 = new Yonetici("Mustafa", "Ankara", "10000", "IT");
+            //Yonetici yonetici1 = new Yonetici();
+            //Yonetici yonetici2 = new Yonetici("Alex de Souza", "Rio de Jenario", "5000", "Futbol");
+            //Yonetici yonetici3 = new Yonetici("Mustafa", "Ankara", "10000", "IT");
 
+
+
+
+
+
+
+            //Product product1 = new Product()
+            //{
+            //    Id = 1,
+            //    Name = "iPhone 13",
+            //    Price = 5900,
+            //    Properties = "8 GB Ram",
+            //    Ratio = 0.5m,
+            //    CreatedDate = DateTime.Now
+            //};
+            //Console.WriteLine($"Product Name: {product1.Name}(Büyük harf: {product1.NameToUpper(product1.Name)}) Properties: {product1.Properties}");
+
+            //Category category1 = new Category()
+            //{
+            //    Id = 1,
+            //    Name = "Telefon",
+            //    CreatedDate = DateTime.Now,
+            //    Description = "Telefon kategorisi için."
+            //};
+            //Console.WriteLine($"Category Name: {category1.Name}(Büyük harf: {category1.NameToUpper(category1.Name)}) Description: {category1.Description}");
+
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
