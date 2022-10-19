@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Ölçü Birimleri: 
+    px, 
 
+    % (içinde bulunulan elementin boyutuna göre orantılı bir ölçü vermeyi sağlar), 
+    
+    cm, 
+
+    mm, 
+
+    in(2.54cm)(96px), 
+
+    pt(punto), 
+
+    pc(pika)(tipografik ölçü birimi)(12pt), 
+
+    em(ana ebeveyn etiketin font boyutuna göre ölçeklendirilerek belirlenen boyuttur. örneğin bir etiketin ana ebeveyni body ise ve body'nin font büyüklüğü 16px ayarlanmışsa, 1em dediğimde 16px'e denk gelir.), 
+
+    vh(viewport height)(tarayıcının yüksekliği ile orantılı bir ölçü vermeyi sağlar), 
+
+    vw(viewport weight)(tarayıcının genişliği ile orantılı bir ölçü vermeyi sağlar),
+-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Box 01</title>
+    <title>Units</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px;
         }
 
         .container {
@@ -30,11 +51,13 @@
         .footer{
             height: 60px;
             color: #fff;
+            font-size: 1.5em;
         }
 
         .header h1 {
             color: goldenrod;
-            font-size: 60px;
+            /* font-size: 60px; */
+            font-size: 6em;
         }
 
         .content {
@@ -47,6 +70,7 @@
 
         .content-left {
             width: 25%;
+            font-size: 1.5em;
         }
 
         .content-left ul{
@@ -71,12 +95,13 @@
         .content-right {
             width: 75%;
             /* padding-left: 15px; */
-
+            font-size: 1.4em;
         }
 
         .content-right h1{
             color: #002B5B;
             margin: 0;
+            font-size: 2.3em;
         }
 
     </style>

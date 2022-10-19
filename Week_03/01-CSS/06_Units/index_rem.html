@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- rem çarpan olarak kullanıyoruz. -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex Box 01</title>
+    <title>Units</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px;
         }
 
         .container {
@@ -32,9 +33,15 @@
             color: #fff;
         }
 
+        .header{
+            font-size: 20px;
+
+        }
+
         .header h1 {
             color: goldenrod;
-            font-size: 60px;
+            font-size: 1rem;
+            /* font-size: 60px; */
         }
 
         .content {
@@ -54,6 +61,7 @@
             padding: 0;
             /* default margin'i sıfırladık */
             margin: 0;
+
         }
 
         .content-left ul li{
@@ -71,7 +79,6 @@
         .content-right {
             width: 75%;
             /* padding-left: 15px; */
-
         }
 
         .content-right h1{
