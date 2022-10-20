@@ -18,6 +18,8 @@ body {
 
 .main-header {
     display: flex;
+    position: fixed;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
     background-color: tomato;
@@ -129,18 +131,6 @@ body {
     font-size: 30px;
 }
 
-/* 
-.features-right a {
-    background-color: tomato;
-    color: #fff;
-    padding: 7px 15px;
-    text-decoration: none;
-    font-size: 14px;
-    margin-top: 15px;
-    display: inline-block;
-    border-radius: 3px;
-} */
-
 .features-right a:hover {
     background-color: #fff;
     color: tomato;
@@ -154,10 +144,12 @@ body {
 }
 
 .plan {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
     text-align: center;
-    padding: 16px;
-    width: 33.3%;
-    float: left;
+    background-color: #edf5f7;
+    border-radius: 5px;
 }
 
 .recommended-plan {
@@ -166,18 +158,13 @@ body {
 
 }
 
-.inner-plan {
-    background-color: #edf5f7;
-    padding: 8px;
-    border-radius: 5px;
-}
 
-.inner-plan ul {
+.plan ul {
     list-style-type: none;
     padding: 0px;
 }
 
-.inner-plan ul li {
+.plan ul li {
     margin: 5px 0;
 }
 
@@ -186,4 +173,69 @@ body {
     color: tomato;
     padding: 8px;
     border-radius: 5px;
+}
+
+/* Tarayıcı genişliği 632 pikselin altında ise bu kodlar çalışır. */
+@media (max-width: 632px){
+    .main-header{
+        flex-direction: column;
+        height: auto;
+    }
+    .main-nav{
+        margin-top: 20px;
+    }
+
+    /* .main-nav-items{
+        flex-direction: column;
+    } */
+}
+
+@media (max-width: 790px){
+    #showcase .content h1{
+        font-size: 35px;
+    }
+    #showcase .content h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 650px){
+    #showcase .content{
+        padding: 20px;
+    }
+
+    #showcase .content h1{
+        font-size: 20px;
+    }
+    #showcase .content h2{
+        font-size: 15px;
+        
+    }
+}
+@media (max-width: 860px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-3{
+        width: 80%!important;
+        margin-bottom: 30px;
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+
+    .features-left{
+        height: 200px;
+        width: 90%!important;
+    }
+
+    .features-right{
+        width: 90%!important;
+    }
+
+    .recommended-plan{
+        order: -1;
+    }
+
 }
