@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/library.css">
+    <style>
+    </style>
+</head>
+<!-- 1) Menümüzün her zaman yerinde sabit kalmasını sağlayın (fixed) -->
+<!-- 2) Menü ile resim arasında bir miktar boşluk olsun -->
+<!-- 3) Welcome to application yazısı resmin tam ortasında olsun -->
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <!--Burası sayfamızın üst kısmı-->
+            <a href="#" class="main-header-logo">Movie Application</a>
+            <nav class="main-nav">
+                <ul class="main-nav-items">
+                    <li class="main-nav-item"><a href="#">Home</a></li>
+                    <li class="main-nav-item"><a href="#">Movies</a></li>
+                    <li class="main-nav-item"><a href="#">Contact</a></li>
+                    <li class="main-nav-item main-nav-item-login"><a href="#"><i
+                                class="fa-solid fa-arrow-right-to-bracket"></i> Login </a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Burası sayfamızın ana içerik kısmı-->
+            <section id="showcase">
+                <div class="content">
+                    <h1>Welcome</h1>
+                    <h2>Millions of Movies, TV Shows and people to discover. Explore now!</h2>
+                </div>
+            </section>
+            <section id="how-it-works">
+                <div class="row">
+                    <div class="col-1 p-3 m-5">
+                        <h2>How it works?</h2>
+                        <p class="m-5 p-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque modi, laboriosam, ea nobis
+                            culpa
+                            iusto corporis sequi tenetur autem eveniet ipsam voluptas. Sint sapiente quasi, ea saepe
+                            quae
+                            quod cupiditate!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="icon-box col-3 p-5 m-2">
+                        <i class="fa-regular fa-address-card"></i>
+                        <h3>Register</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, harum quisquam
+                            ratione hic minima modi sed dicta illo excepturi, sint blanditiis. Sapiente, alias
+                            ipsum. Necessitatibus, eum. Nulla, veritatis eum!</p>
+                    </div>
+                    <div class="icon-box col-3 p-5 m-2">
+                        <i class="fa-solid fa-square-check" style="font-size: 90px;"></i>
+                        <h3>Choose a Plan</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, harum quisquam
+                            ratione hic minima modi sed dicta illo excepturi, sint blanditiis. Sapiente, alias
+                            ipsum. Necessitatibus, eum. Nulla, veritatis eum!</p>
+                    </div>
+                    <div class="icon-box col-3 p-5 m-2">
+                        <i class="fa-solid fa-film"></i>
+                        <h3>Enjoy Movies</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, harum quisquam
+                            ratione hic minima modi sed dicta illo excepturi, sint blanditiis. Sapiente, alias
+                            ipsum. Necessitatibus, eum. Nulla, veritatis eum!</p>
+                    </div>
+                </div>
+            </section>
+            <section id="features">
+                <div class="row">
+                    <div class="col-2 features-left"></div>
+                    <div class="col-2 features-right">
+                        <h3>Watch all Movies and TV Shows once they get released!</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis ea ullam, nemo quos
+                            fugiat eligendi dolorem vitae illum non dignissimos consequatur facere quam, vero incidunt
+                            id! Cumque reiciendis expedita praesentium?</p>
+                        <a class="btn btn-primary" href="">Features</a>
+                    </div>
+                </div>
+            </section>
+            <section id="plans">
+                <h2 class="section-title">Become a Premium Member</h2>
+                <div>
+                    <div class="clearfix plan">
+                        <!-- inner plan arada boşluk yaratmak için oluşturuldu -->
+                        <div class="inner-plan">
+                            <h2>Free</h2>
+                            <h3>0/month</h3>
+                            <ul>
+                                <li>Lorem</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem</li>
+                            </ul>
+                            <div>
+                                <button class="btn btn-secondary">Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix plan">
+                        <div class="inner-plan recommended-plan">
+                            <h2 class="plan-badge">Recommended</h2>
+                            <h2>Basic</h2>
+                            <h3>$9.99/month</h3>
+                            <ul>
+                                <li>Lorem</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem</li>
+                            </ul>
+                            <div>
+                                <button class="btn btn-primary">Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix plan">
+                        <div class="inner-plan">
+                            <h2>Premium</h2>
+                            <h3>$19.99/month</h3>
+                            <ul>
+                                <li>Lorem</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem, ipsum dolor.</li>
+                                <li>Lorem, ipsum.</li>
+                                <li>Lorem</li>
+                            </ul>
+                            <div>
+                                <button class="btn btn-secondary">Choose Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
