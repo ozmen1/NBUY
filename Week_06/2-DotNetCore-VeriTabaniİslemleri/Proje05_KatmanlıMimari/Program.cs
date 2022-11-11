@@ -34,9 +34,9 @@ class Program
             }
         } while (select != 0);
     }
-    static void Menu(string dbType){
+    static void Menu(int dbType){
         Console.Clear();
-        string dbName = dbType == "1" ? "MsSql" : "Sqlite";
+        string dbName = dbType == 1? "MsSql" : "Sqlite";
         System.Console.WriteLine($"By {dbName} Database - Northwind");
         System.Console.WriteLine("-----------------------------");
         System.Console.WriteLine("1-Product List");
@@ -45,7 +45,7 @@ class Program
         int select = int.Parse(Console.ReadLine());
         if (select == 1)
         {
-            if (dbType == "1")
+            if (dbType == 1)
             {
                 ProductList(new SqlProductDAL());
             }
@@ -55,7 +55,7 @@ class Program
             }
         }
         else if(select == 2){
-            if (dbType == "1")
+            if (dbType == 1)
             {
                 CustomerList(new SqlCustomerDAL());
             }
