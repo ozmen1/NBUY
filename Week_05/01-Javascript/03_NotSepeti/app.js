@@ -1,8 +1,6 @@
 'use strict';
 const btnAdd = document.getElementById('note-input-button');
 const txtNote = document.getElementById('note-input-form');
-let isEditMode = false;
-let editedId;
 btnAdd.addEventListener('click', addNote);
 txtNote.addEventListener('keypress', function (event) {
     if (event.key == 'Enter') {
@@ -29,13 +27,18 @@ function displayNotes(filter) {
         let completed = note.durum == 'completed' ? 'checked' : '';
         if (filter == note.durum || filter == 'all') {
             let li = `
-            <li class="note-box note-box-item">
+            <li class="note-box-li note-box-item">
             <div class="form-check">
                 <div>
-                    <label for="${note.id}" class="form-check-label ${completed}">${note.note}</label>
+                    <label for="${note.id}" class="form-check-label ${completed}" >${note.note}</label>
                 </div>
                 <div class="checkbox">
-                    <input onclick="updateStatus(this)" type="checkbox" id="${note.id}" class="form-check-input" ${completed}>
+                    <div id="check">
+                        <input onclick="updateStatus(this)" type="checkbox" id="${note.id}" class="form-check-input" ${completed}>
+                    </div>
+                    <div id="remove">
+                        <a onclick="removeNote(${note.id})" href="#"><i class="fa-solid fa-trash-can"></i></a>
+                    </div>
                 </div>
             </div>
             </li>
@@ -70,8 +73,9 @@ function addNote(event) {
 };
 
 function updateStatus(selectedNote) {
-    let label = selectedNote.nextElementSibling;
+    let label = selectedNote.parentElement.lastElementChild;
     let durum;
+    console.log(label);
     if (selectedNote.checked) {
         label.classList.add('checked');
         durum = 'completed';
@@ -84,6 +88,7 @@ function updateStatus(selectedNote) {
             note.durum = durum;
         }
     }
+    displayNotes('all');
     saveLocal();
 };
 
@@ -93,6 +98,19 @@ function isFull(value) {
     }
     return true;
 };
+
+function removeNote(id) {
+    let deletedId;
+    for (const noteIndex in noteList) {
+        if (noteList[noteIndex].id == id) {
+            deletedId = noteIndex;
+        }
+    };
+
+    noteList.splice(deletedId, 1);
+    displayNotes('all');
+    saveLocal();
+}
 
 function ilkHarfiBuyut(value) {
     let ilkHarf = value[0].toUpperCase();

@@ -77,13 +77,33 @@ body {
     padding: 10px;
 }
 
+.form-check-label:hover{
+    background-color: gray;
+}
+
 .form-check-input {
     height: 15px;
     width: 15px;
 }
 
 .checkbox{
+    display: flex;
+}
+
+#check{
     background-color: orange;
     padding: 10px;
     margin-left: 0;
+}
+
+#remove{
+    background-color: rgb(44, 160, 85);
+    padding: 10px;
+    margin-left: 0;
+
+}
+
+.form-check-label.checked {
+    text-decoration: line-through;
+    background-color: rgb(198, 198, 198);
 }
