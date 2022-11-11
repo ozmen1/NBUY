@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Proje05_KatmanlıMimari.DataAccessLayer.Entities;
-using Microsoft.Data.Sqlite;
+using System.Data.SqlClient;
 
 namespace Proje05_KatmanlıMimari.DataAccessLayer
 {
-    public class SqliteCustomerDAL : ICustomerDAL
+    public class SqlCustomerDAL : ICustomerDAL
     {
-        private SqliteConnection GetSqliteConnection()
+        private SqlConnection GetSqlConnection()
         {
-            string connectionString = "Data Source = northwind.db";
-            SqliteConnection sqliteConnection = new SqliteConnection(connectionString);
-            return sqliteConnection;
+            string connectionString = @"Server=DESKTOP-OFVK2FD; Database=Northwind; User=sa; Password=123";
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            return sqlConnection;
         }
         public void CreateCustomer(Customer customer)
         {
@@ -27,29 +27,29 @@ namespace Proje05_KatmanlıMimari.DataAccessLayer
 
         public List<Customer> GetAllCustomers()
         {
-            List<Customer> customers = new List<Customer>();
-            using (var connection = GetSqliteConnection())
+            List<Customer> customers = new List<Customer>(); //Product nesnesi tipinde list oluşturuyor.
+            using (var connection = GetSqlConnection())
             {
                 try
                 {
                     connection.Open();
                     string queryString = "SELECT CustomerID, CompanyName, ContactName FROM Customers";
-                    SqliteCommand sqliteCommand = new SqliteCommand(queryString, connection);
-                    SqliteDataReader sqliteDataReader = sqliteCommand.ExecuteReader();
-                    while (sqliteDataReader.Read())
+                    SqlCommand sqlCommand = new SqlCommand(queryString, connection);
+                    SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+                    while (sqlDataReader.Read())
                     {
-                        customers.Add(new Customer(){
-                            Id=sqliteDataReader["CustomerID"].ToString(),
-                            CompanyName=sqliteDataReader["CompanyName"].ToString(),
-                            ContactName=sqliteDataReader["ContactName"].ToString()
+                        customers.Add(new Customer() //Product nesnesi oluşturuyor.
+                        {
+                            Id = sqlDataReader["CustomerID"].ToString(), //önce objeyi unboxing ile string yap.
+                            CompanyName = sqlDataReader["CompanyName"].ToString(),
+                            ContactName = sqlDataReader["ContactName"].ToString()
                         });
                     }
-                    sqliteDataReader.Close();
+                    sqlDataReader.Close();
                 }
-                catch (System.Exception e)
+                catch (Exception)
                 {
-                    System.Console.WriteLine(e.Message);
-                    System.Console.WriteLine("Bir hata oluştu.");
+                    System.Console.WriteLine("Bir sorun oluştu");
                 }
                 finally
                 {

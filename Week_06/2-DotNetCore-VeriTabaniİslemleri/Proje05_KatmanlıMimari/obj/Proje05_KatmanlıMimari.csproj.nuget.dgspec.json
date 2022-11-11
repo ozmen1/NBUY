@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj": {}
+    "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj": {}
   },
   "projects": {
-    "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj": {
+    "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
+        "projectUniqueName": "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
         "projectName": "Proje05_KatmanlıMimari",
-        "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
-        "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\obj\\",
+        "projectPath": "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
+        "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

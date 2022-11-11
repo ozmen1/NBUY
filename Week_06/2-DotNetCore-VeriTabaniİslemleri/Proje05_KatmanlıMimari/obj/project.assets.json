@@ -21,10 +21,14 @@
           "SQLitePCLRaw.core": "2.0.6"
         },
         "compile": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {}
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Data.Sqlite.dll": {}
+          "lib/net6.0/Microsoft.Data.Sqlite.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/3.1.0": {
@@ -43,10 +47,14 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {}
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
@@ -211,10 +219,14 @@
           "runtime.native.System.Data.SqlClient.sni": "4.7.0"
         },
         "compile": {
-          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {}
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
@@ -243,10 +255,14 @@
           "System.Security.Principal.Windows": "4.7.0"
         },
         "compile": {
-          "ref/netstandard2.0/_._": {}
+          "ref/netstandard2.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.AccessControl.dll": {}
+          "lib/netstandard2.0/System.Security.AccessControl.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Security.AccessControl.dll": {
@@ -258,10 +274,14 @@
       "System.Security.Principal.Windows/4.7.0": {
         "type": "package",
         "compile": {
-          "ref/netcoreapp3.0/_._": {}
+          "ref/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {}
+          "lib/netstandard2.0/System.Security.Principal.Windows.dll": {
+            "related": ".xml"
+          }
         },
         "runtimeTargets": {
           "runtimes/unix/lib/netcoreapp2.1/System.Security.Principal.Windows.dll": {
@@ -722,19 +742,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
+    "C:\\Users\\ozmen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
+      "projectUniqueName": "c:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
       "projectName": "Proje05_KatmanlıMimari",
-      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
-      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\obj\\",
+      "projectPath": "c:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\Proje05_KatmanlıMimari.csproj",
+      "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\ozmen\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje05_KatmanlıMimari\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -775,7 +795,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -784,7 +805,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

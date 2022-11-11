@@ -22,8 +22,8 @@ class Program
             }
             else if (select == "2")
             {
-                // CustomerList();
-                // Console.ReadLine();
+                CustomerList();
+                Console.ReadLine();
             }
             else if (select != "0")
             {
@@ -40,14 +40,15 @@ class Program
             System.Console.WriteLine($"Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Stock: {product.Stock}");
         }
     }
-    // static void CustomerList()
-    // {
-    //     List<Customer> customers = GetAllCustomers();
-    //     foreach (var customer in customers)
-    //     {
-    //         System.Console.WriteLine($"Id: {customer.Id}, Company Name: {customer.CompanyName}, Contact Name: {customer.ContactName}");
-    //     }
-    // }
+    static void CustomerList()
+    {
+        var customerManager = new CustomerManager(new SqlCustomerDAL() /*new SqliteCustomerDAL()*/ );
+        List<Customer> customers = customerManager.GetAllCustomers();
+        foreach (var customer in customers)
+        {
+            System.Console.WriteLine($"Id: {customer.Id}, Company Name: {customer.CompanyName}, Contact Name: {customer.ContactName}");
+        }
+    }
 
     // static List<Customer> GetAllCustomers()
     // {
