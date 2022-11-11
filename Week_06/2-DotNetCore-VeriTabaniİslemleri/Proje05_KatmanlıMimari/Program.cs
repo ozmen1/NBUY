@@ -8,82 +8,79 @@ class Program
 {
     static void Main(string[] args)
     {
-        string select;
+        int select;
         do
         {
             Console.Clear();
-            System.Console.WriteLine("Product mı Müşteri mi? (1/2)");
+            System.Console.WriteLine("Choose Database->");
+            System.Console.WriteLine("1-MsSql");
+            System.Console.WriteLine("2-Sqlite");
             System.Console.WriteLine("Çıkmak için 0'a basınız.");
-            select = Console.ReadLine();
-            if (select == "1")
+            System.Console.WriteLine("Lütfen seçiminizi giriniz: ");
+            select = int.Parse(Console.ReadLine());
+            if (select == 1)
             {
-                ProductList();
+                Menu(select);
                 Console.ReadLine();
             }
-            else if (select == "2")
+            else if (select == 2)
             {
-                CustomerList();
+                Menu(select);
                 Console.ReadLine();
             }
-            else if (select != "0")
+            else if (select != 0)
             {
                 System.Console.WriteLine("Lütfen geçerli bir değer giriniz.");
             }
-        } while (select != "0");
+        } while (select != 0);
     }
-    static void ProductList()
+    static void Menu(string dbType){
+        Console.Clear();
+        string dbName = dbType == "1" ? "MsSql" : "Sqlite";
+        System.Console.WriteLine($"By {dbName} Database - Northwind");
+        System.Console.WriteLine("-----------------------------");
+        System.Console.WriteLine("1-Product List");
+        System.Console.WriteLine("2-Customer List");
+        System.Console.Write("Seçiminizi yapınız: ");
+        int select = int.Parse(Console.ReadLine());
+        if (select == 1)
+        {
+            if (dbType == "1")
+            {
+                ProductList(new SqlProductDAL());
+            }
+            else
+            {
+                ProductList(new SqliteProductDAL());
+            }
+        }
+        else if(select == 2){
+            if (dbType == "1")
+            {
+                CustomerList(new SqlCustomerDAL());
+            }
+            else
+            {
+                CustomerList(new SqliteCustomerDAL());
+            }
+        }
+    }
+    static void ProductList(IProductDAL productDAL)
     {
-        var productManager = new ProductManager(new SqlProductDAL() /*new SqliteProductDAL()*/ );
+        var productManager = new ProductManager(productDAL);
         List<Product> products = productManager.GetAllProducts();
         foreach (var product in products)
         {
             System.Console.WriteLine($"Id: {product.Id}, Name: {product.Name}, Price: {product.Price}, Stock: {product.Stock}");
         }
     }
-    static void CustomerList()
+    static void CustomerList(ICustomerDAL customerDAL)
     {
-        var customerManager = new CustomerManager(new SqlCustomerDAL() /*new SqliteCustomerDAL()*/ );
+        var customerManager = new CustomerManager(customerDAL);
         List<Customer> customers = customerManager.GetAllCustomers();
         foreach (var customer in customers)
         {
-            System.Console.WriteLine($"Id: {customer.Id}, Company Name: {customer.CompanyName}, Contact Name: {customer.ContactName}");
+            System.Console.WriteLine($"Id: {customer.Id}, Company Name: {customer.CompanyName}, Contact Name: {customer.ContactName}, City: {customer.City}, Country: {customer.Country}");
         }
     }
-
-    // static List<Customer> GetAllCustomers()
-    // {
-    //     List<Customer> customers = new List<Customer>();
-    //     using (var connection = GetSqlConnection())
-    //     {
-    //         try
-    //         {
-    //             connection.Open();
-    //             string queryString = "SELECT CustomerID, CompanyName, ContactName FROM Customers";
-    //             SqlCommand sqlCommand = new SqlCommand(queryString, connection);
-    //             SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-    //             while (sqlDataReader.Read())
-    //             {
-    //                 customers.Add(new Customer()
-    //                 {
-    //                     Id = sqlDataReader["CustomerID"].ToString(), //önce objeyi unboxing ile string yap.
-    //                     CompanyName = sqlDataReader["CompanyName"].ToString(),
-    //                     ContactName = sqlDataReader["ContactName"].ToString()
-    //                 });
-    //             }
-    //             sqlDataReader.Close();
-    //         }
-    //         catch (Exception)
-    //         {
-    //             System.Console.WriteLine("Bir sorun oluştu");
-    //         }
-    //         finally
-    //         {
-    //             connection.Close();
-    //         }
-    //     }
-    //     return customers;
-    // }
-
-
-
 }

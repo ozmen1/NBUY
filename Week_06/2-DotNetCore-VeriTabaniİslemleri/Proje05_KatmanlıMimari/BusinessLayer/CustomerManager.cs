@@ -26,15 +26,10 @@ namespace Proje05_KatmanlıMimari.BusinessLayer
 
         public List<Customer> GetAllCustomers()
         {
-            return _customerDAL.GetAllCustomers();
+            return _customerDAL.GetAll();
         }
 
-        public Customer GetByIdCustomer(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Customer> GetCustomersByCategory(string categoryName)
+        public Product GetByIdCustomer(int id)
         {
             throw new NotImplementedException();
         }
@@ -43,5 +38,6 @@ namespace Proje05_KatmanlıMimari.BusinessLayer
         {
             throw new NotImplementedException();
         }
+
     }
 }
