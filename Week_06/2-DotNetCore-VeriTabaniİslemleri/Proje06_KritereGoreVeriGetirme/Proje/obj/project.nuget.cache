@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wn6lxiuhUtXIvxHQyL4SVsuxynLsloj83WQjutrlpIzT6mg5cxuhNKV3KCcvPqBPouxX7Va8hiEnCbC07NRXgg==",
+  "dgSpecHash": "kkrRDCzFt3U3sRow/Ut3L50JKxWp14KWpupGlRcd5KXRz9CUpkJE20WGX3QqOPgxzeiwEjZMP1Qrxkte1iYg1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\Proje.csproj",
+  "projectFilePath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\Proje.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.data.sqlite\\6.0.11\\microsoft.data.sqlite.6.0.11.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.11\\microsoft.data.sqlite.core.6.0.11.nupkg.sha512",

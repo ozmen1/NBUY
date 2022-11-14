@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\Proje.csproj": {}
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje01_MVC\\Proje01_MVC.csproj": {}
   },
   "projects": {
-    "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\Proje.csproj": {
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje01_MVC\\Proje01_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\Proje.csproj",
-        "projectName": "Proje",
-        "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\Proje.csproj",
+        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje01_MVC\\Proje01_MVC.csproj",
+        "projectName": "Proje01_MVC",
+        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje01_MVC\\Proje01_MVC.csproj",
         "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje06_KritereGoreVeriGetirme\\Proje\\obj\\",
+        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje01_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,16 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.Data.Sqlite": {
-              "target": "Package",
-              "version": "[6.0.11, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -60,6 +50,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
