@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Desktop\\Proje01_MVC\\Proje01_MVC.csproj": {}
+    "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Desktop\\Proje01_MVC\\Proje01_MVC.csproj": {
+    "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Desktop\\Proje01_MVC\\Proje01_MVC.csproj",
-        "projectName": "Proje01_MVC",
-        "projectPath": "C:\\Users\\SABAH\\Desktop\\Proje01_MVC\\Proje01_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
+        "projectName": "Proje02_DatabaseFirst_1",
+        "projectPath": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
         "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Desktop\\Proje01_MVC\\obj\\",
+        "outputPath": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,22 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -56,9 +72,6 @@
             }
           ],
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
