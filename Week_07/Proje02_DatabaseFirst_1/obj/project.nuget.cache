@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JekbJM/glKasFYZAOrzhWyRj0UtoGltbDDFdp3WBVjnbLgUdj/I9Tw+R2exm4jFjFsRJZNginGb9TxV8e/XuOw==",
+  "dgSpecHash": "3cuh6p+zSaO+YQ9tOQEHc3PrT/rBCL2iQ+XGhiR2Rghp4h7pSLAcruzstiGs7bv6YuWQQWPjAqO5ZHTCtiNqJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
+  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABAH\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -45,8 +45,7 @@
     "C:\\Users\\SABAH\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
-    "C:\\Users\\SABAH\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.3\\microsoft.netcore.app.host.win-x64.6.0.3.nupkg.sha512"
+    "C:\\Users\\SABAH\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

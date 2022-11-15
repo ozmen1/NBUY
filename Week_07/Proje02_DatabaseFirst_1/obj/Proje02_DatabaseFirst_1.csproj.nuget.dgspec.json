@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj": {}
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj": {
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
+        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
         "projectName": "Proje02_DatabaseFirst_1",
-        "projectPath": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
+        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje02_DatabaseFirst_1\\Proje02_DatabaseFirst_1.csproj",
         "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Desktop\\Proje02_DatabaseFirst_1\\obj\\",
+        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje02_DatabaseFirst_1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,18 +65,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.3, 6.0.3]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
