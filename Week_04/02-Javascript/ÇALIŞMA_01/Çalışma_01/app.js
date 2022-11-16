@@ -15,11 +15,11 @@
 
 
 // hocanın çözümü
-let saniye = parseInt(prompt('Lütfen saniye değerini giriniz: '));
-console.log('Girilen saniye değeri: ' + saniye);
-let dakika = parseInt(saniye / 60);
-saniye = saniye % 60;
-console.log(dakika + ' dakika ' + saniye + ' saniye');
+// let saniye = parseInt(prompt('Lütfen saniye değerini giriniz: '));
+// console.log('Girilen saniye değeri: ' + saniye);
+// let dakika = parseInt(saniye / 60);
+// saniye = saniye % 60;
+// console.log(dakika + ' dakika ' + saniye + ' saniye');
 
 
 //ÖNERİ:
@@ -29,3 +29,10 @@ girilen saniye değerini 1 saat 45 dk 40 sn olarak göstersin
 
 
 */
+
+let saniye = parseInt(prompt('Lütfen saniye değerini giriniz: '));
+console.log('Girilen saniye değeri: ' + saniye);
+let saat = parseInt(saniye / 3600);
+let dakika = Math.abs(saat*60 - parseInt(saniye / 60));
+saniye = saniye % 60;
+console.log(saat + ' saat ' + dakika + ' dakika ' + saniye + ' saniye');
