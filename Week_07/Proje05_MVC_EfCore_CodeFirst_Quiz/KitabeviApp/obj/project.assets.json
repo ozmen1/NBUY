@@ -1138,11 +1138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\SABAH\\Documents\\GitHub\\NbuyEkim_Kerem_Ozmen_Odevler\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\KitabeviApp.csproj",
+      "projectUniqueName": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\KitabeviApp.csproj",
       "projectName": "KitabeviApp",
-      "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NbuyEkim_Kerem_Ozmen_Odevler\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\KitabeviApp.csproj",
+      "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\KitabeviApp.csproj",
       "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NbuyEkim_Kerem_Ozmen_Odevler\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\obj\\",
+      "outputPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",

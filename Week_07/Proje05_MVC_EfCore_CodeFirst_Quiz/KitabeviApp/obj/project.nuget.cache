@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KgJ/LDAF0/YuyZvkB6Ut9U6ms87jwGlTUMnfDADAMiklxThHvX+h/c3vu3lU2KMENrwm8hfxjDCn3uamHpzOPw==",
+  "dgSpecHash": "u+JSf+qkIe8Cv9jbE8Ffie7EcyEduFP6BQQWpUDdCOfrTPpgYv99TrpQ2cCeRw2h/Ntp20uf9dWGk1BAS4WAMA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NbuyEkim_Kerem_Ozmen_Odevler\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\KitabeviApp.csproj",
+  "projectFilePath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_07\\Proje05_MVC_EfCore_CodeFirst_Quiz\\KitabeviApp\\KitabeviApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABAH\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.11\\microsoft.data.sqlite.core.6.0.11.nupkg.sha512",
