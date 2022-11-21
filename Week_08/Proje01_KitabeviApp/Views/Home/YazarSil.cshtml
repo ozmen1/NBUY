@@ -1,0 +1,39 @@
+@model Yazar
+@{
+    ViewData["Title"] = "Yazar Sil";
+}
+
+<h1 class="display-6 alert alert-danger">DİKKAT YAZAR SİLİNECEK! EMİN MİSİNİZ?</h1>
+<hr>
+<form asp-controller="Home" asp-action="YazarSil" method="post">
+    <div class="row mb-2">
+        <div class="col-2">
+            <label asp-for="Ad" class="form-label"></label>
+        </div>
+        <div class="col-4">
+            <input type="text" asp-for="Ad" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-2">
+            <label asp-for="DogumYili" class="form-label"></label>
+        </div>
+        <div class="col-4">
+            <input type="text" asp-for="DogumYili" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-2">
+            <label asp-for="Cinsiyet" class="form-label">Cinsiyet</label>
+        </div>
+        <div class="col-4">
+            <input type="radio" class="form-check-input" asp-for="Cinsiyet" value="K" checked><label>Kadın</label>
+            <input type="radio" class="form-check-input" asp-for="Cinsiyet" value="E"><label>Erkek</label>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-6 d-grid">
+            <input type="submit" class="btn btn-danger" value="Sil">
+        </div>
+    </div>
+</form>
