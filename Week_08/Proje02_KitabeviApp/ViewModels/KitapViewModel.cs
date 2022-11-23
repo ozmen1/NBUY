@@ -10,6 +10,6 @@ namespace Proje02_KitabeviApp.ViewModels
     {
         public Kitap Kitap { get; set; }
         public List<Yazar> Yazarlar { get; set; }
-        public List<Kategori> Kategoriler { get; set; } 
+        public List<Kategori> Kategoriler { get; set; }
     }
 }

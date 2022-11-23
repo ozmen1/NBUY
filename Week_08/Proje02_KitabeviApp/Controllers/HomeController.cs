@@ -43,15 +43,15 @@ public class HomeController : Controller
                 .Include(k => k.Yazar)
                 .ToList();
         }
+
         List<KitapListViewModel> kitapListViewModels = kitaplar
-            .Select(k=>new KitapListViewModel()
-            {
-                Id = k.Id,
-                Ad = k.Ad,
-                BasimYili = k.BasimYili,
-                SayfaSayisi = k.SayfaSayisi,
-                Yazar = k.Yazar,
-                Kategori = k.Kategori
+            .Select(k=> new KitapListViewModel(){
+                Id=k.Id,
+                Ad=k.Ad,
+                BasimYili=k.BasimYili,
+                SayfaSayisi=k.SayfaSayisi,
+                YazarAd=k.Yazar.Ad,
+                KategoriAd=k.Kategori.Ad
             }).ToList();
         return View(kitapListViewModels);
     }
@@ -161,11 +161,13 @@ public class HomeController : Controller
     public IActionResult KitapGuncelle(int id)
     {
         Kitap kitap = context.Kitaplar.Find(id);
-        // KitapViewModel kitapViewModel = new KitapViewModel();
-        // kitapViewModel.Kitap = kitap;
-        // kitapViewModel.Yazarlar = context.Yazarlar.ToList();
-        // kitapViewModel.Kategoriler = context.Kategoriler.ToList();
-        KitapViewModel kitapViewModel = new KitapViewModel(){
+        // KitapViewModel kitapModel = new KitapViewModel();
+        // kitapModel.Kitap=kitap;
+        // kitapModel.Yazarlar=context.Yazarlar.ToList();
+        // kitapModel.Kategoriler=context.Kategoriler.ToList();
+
+        KitapViewModel kitapViewModel = new KitapViewModel()
+        {
             Kitap = kitap,
             Yazarlar = context.Yazarlar.ToList(),
             Kategoriler = context.Kategoriler.ToList()

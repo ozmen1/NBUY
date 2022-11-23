@@ -12,8 +12,7 @@ namespace Proje02_KitabeviApp.ViewModels
         public string Ad { get; set; }
         public int BasimYili { get; set; }
         public int SayfaSayisi { get; set; }
-        public Kategori Kategori { get; set; }
-        public Yazar Yazar { get; set; }
-
+        public string YazarAd { get; set; }
+        public string KategoriAd { get; set; }
     }
 }

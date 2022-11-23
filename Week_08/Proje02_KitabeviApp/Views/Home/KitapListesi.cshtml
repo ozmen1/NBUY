@@ -1,4 +1,4 @@
-@model kitapListViewModels
+@model List<KitapListViewModel>
 @{
     ViewData["Title"] = "Kitap Listesi";
 }
@@ -25,8 +25,8 @@
             <tr>
                 <td>@y.Id</td>
                 <td>@y.Ad</td>
-                <td>@y.Yazar.Ad</td>
-                <td>@y.Kategori.Ad</td>
+                <td>@y.YazarAd</td>
+                <td>@y.KategoriAd</td>
                 <td>@y.BasimYili</td>
                 <td>@y.SayfaSayisi</td>
                 <td>
