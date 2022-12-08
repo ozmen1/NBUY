@@ -1,0 +1,32 @@
+﻿@using ShoppingApp.Web.Models.Dtos
+@model ProductDetailsDto
+
+<div>@Model.Id</div>
+<div>@Model.Name</div>
+<div>@Model.Price</div>
+<div>@Model.ImageUrl</div>
+<div>@Model.Url</div>
+<div>@Model.Description</div>
+<div>
+    Kategoriler:
+    @foreach (var category in Model.Categories)
+    {
+        <div>@category.Name</div>
+    }
+</div>
+
+<div class="card mb-3">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="/images/@Model.ImageUrl" />
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text"><small class="text-muted">@Model.Price</small></p>
+            </div>
+            <div class="card-footer">@foreach (var category in Model.Categories){<a>@category.Name </a>}</div>
+        </div>
+    </div>
+</div>
