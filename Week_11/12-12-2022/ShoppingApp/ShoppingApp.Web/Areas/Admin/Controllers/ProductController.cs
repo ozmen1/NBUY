@@ -3,7 +3,6 @@ using ShoppingApp.Business.Abstract;
 using ShoppingApp.Core;
 using ShoppingApp.Entity.Concrete;
 using ShoppingApp.Web.Areas.Admin.Models.Dtos;
-using System;
 
 namespace ShoppingApp.Web.Areas.Admin.Controllers
 {
@@ -27,8 +26,10 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
                 {
                     Product = p
                 }).ToList();
+     
             return View(productListDto);
         }
+
         [HttpGet]
         public async Task<IActionResult> Create()
         {
@@ -60,54 +61,54 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
             }
             var categories = await _categoryService.GetAllAsync();
             productAddDto.Categories = categories;
+            productAddDto.ImageUrl = productAddDto.ImageUrl;
             return View(productAddDto);
         }
+
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
-            var productsWithCategories = await _productService.GetProductWithCategories(id);
-            var product = await _productService.GetByIdAsync(id);
-            if (product == null)
+            
+            var product = await _productService.GetProductWithCategories(id);
+            ProductUpdateDto productUpdateDto = new ProductUpdateDto
             {
-                return NotFound();
-            }
-            var productUpdateDto = new ProductUpdateDto
-            {
+                Id = product.Id,
                 Name = product.Name,
                 Price = product.Price,
                 Description = product.Description,
-                //Url = Jobs.InitUrl(product.Name),
                 IsApproved = product.IsApproved,
                 IsHome = product.IsHome,
-                //ImageUrl = product.ImageUrl
-                Categories = await _categoryService.GetAllAsync();
+                ImageUrl = product.ImageUrl,
+                Categories = await _categoryService.GetAllAsync(),
+                SelectedCategoryIds = product.ProductCategories.Select(pc => pc.CategoryId).ToArray()
             };
             return View(productUpdateDto);
-
-
-    }
+        }
         [HttpPost]
         public async Task<IActionResult> Edit(ProductUpdateDto productUpdateDto, int[] selectedCategoryIds)
         {
             if (ModelState.IsValid)
             {
-                var product = await _productService.GetByIdAsync(productUpdateDto.id);
+                var product = await _productService.GetByIdAsync(productUpdateDto.Id);
                 if (product==null)
                 {
                     return NotFound();
                 }
-            var url = Jobs.UploadImage(productUpdateDto.Name);
-            product.Name = productUpdateDto.Name;
-            product.Price = productUpdateDto.Price;
-            product.Description = productUpdateDto.Description;
-            product.IsApproved = productUpdateDto.IsApproved;
-            product.IsHome = productUpdateDto.IsHome;
-            product.ImageUrl = Jobs.UploadImage(productUpdateDto.ImageFile);
-            product.Url = url;
-            await _productService.UpdateProductAsync(product, selectedCategoryIds);
-            return RedirectToAction("Index");
+                var url= Jobs.InitUrl(productUpdateDto.Name);
+                product.Name= productUpdateDto.Name;
+                product.Price= productUpdateDto.Price;
+                product.Description= productUpdateDto.Description;
+                product.IsApproved=productUpdateDto.IsApproved;
+                product.IsHome = productUpdateDto.IsHome;
+                product.ImageUrl = Jobs.UploadImage(productUpdateDto.ImageFile);
+                product.Url = url;
+                await _productService.UpdateProductAsync(product, selectedCategoryIds);
+                return RedirectToAction("Index");
             }
-        return View();
+            var categories = await _categoryService.GetAllAsync();
+            productUpdateDto.Categories = categories;
+            
+            return View(productUpdateDto);
         }
     }
 }

@@ -31,5 +31,7 @@ namespace ShoppingApp.Web.Areas.Admin.Models.Dtos
         public List<Category> Categories { get; set; }
         [Required(ErrorMessage = "En az bir kategori seçilmelidir.")]
         public int[] SelectedCategoryIds { get; set; }
+        public string ImageUrl { get; set; }
+
     }
 }
