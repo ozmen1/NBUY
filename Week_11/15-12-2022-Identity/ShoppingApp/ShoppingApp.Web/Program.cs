@@ -69,7 +69,7 @@ builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IProductService, ProductManager>();
 
 builder.Services.AddScoped<IEmailSender, SmtpEmailSender>(x => new SmtpEmailSender(
-    "smtp.office365.com", 587, true, "wissen_core@hotmail.com", "Wissen123."
+    "smtp.office365.com", 587, true, "wissenerp502@outlook.com", "Wissen123."
     ));
 
 var app = builder.Build();
