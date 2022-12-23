@@ -1,0 +1,27 @@
+﻿@model List<OrderListDto>
+<button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#detailsOrder">Detay Göster</button>
+
+<div class="modal fade" id="detailsOrder" tabindex="-1" aria-labelledby="detailsOrder" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailsOrder">Sipariş Detayları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @foreach (var order in Model)
+                {
+                    <ul>
+                        <li>@order.OrderNumber</li>
+                        <li>@order.OrderDate.ToShortDateString()</li>
+                        <li>@($"{order.TotalPrice():C0}")</li>
+                        <li>@order.OrderListItems.</li>
+                    </ul>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
