@@ -99,7 +99,7 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
             return View(roleDetailsDto);
         }
         [HttpPost]
-        public async Task<IActionResult> Edit(RoleEditDetailsDto roleEditDetailsDto)
+        public async Task<IActionResult> Edit(RoleEditDetailsDto roleEditDetailsDto, string From)
         {
             if (ModelState.IsValid)
             {
@@ -139,60 +139,16 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
             }
             return Redirect("/Admin/Role/Edit/" + roleEditDetailsDto.RoleId);
         }
-        public IActionResult UserRoles()
+        [NonAction]
+        private UserRolesDto GetUserRolesDto()
         {
-            List<User> users = _userManager.Users.Select(u => new User
+            List<User> users = _userManager.Users.Select(u => new Entity.Concrete.Identity.User
             {
                 Id = u.Id,
                 FirstName = u.FirstName,
                 LastName = u.LastName,
                 UserName = u.UserName
             }).ToList();
-            List<Role> roles = _roleManager.Roles.Select(r => new Role
-            {
-                Id = r.Id,
-                Name = r.Name,
-                Description = r.Description
-            }).ToList();
-            List<SelectListItem> selectRoleList = roles.Select(r=>new SelectListItem
-            {
-                Text=r.Name,
-                Value=r.Id
-            }).ToList();
-
-            UserRolesDto userRolesDto = new UserRolesDto
-            {
-                SelectRoleList = selectRoleList,
-                Users = users
-            };
-            ViewBag.SelectedMenu = "UserRoles";
-            ViewBag.Title = "Rol Atama";
-            return View(userRolesDto);
-        }
-        public async Task<IActionResult> GetUsers(UserRolesDto userRolesDto)
-        {
-            var role = await _roleManager.FindByIdAsync(userRolesDto.RoleId);
-            var members = new List<User>();
-            var nonMembers = new List<User>();
-            List<User> users = _userManager.Users.Select(u => new User
-            {
-                Id = u.Id,
-                FirstName = u.FirstName,
-                LastName = u.LastName,
-                UserName = u.UserName
-            }).ToList();
-            foreach (var user in users)
-            {
-                var list = await _userManager.IsInRoleAsync(user, role.Name) ? members : nonMembers;
-                //bu role ait olan userları memberlar içine, ait olmayan userları nonmember'lar içerisine atacak
-                list.Add(user);
-            }
-            var roleDetailsDto = new RoleDetailsDto
-            {
-                Role = role,
-                Members = members,
-                NonMembers = nonMembers
-            };
             List<Role> roles = _roleManager.Roles.Select(r => new Role
             {
                 Id = r.Id,
@@ -204,10 +160,43 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
                 Text = r.Name,
                 Value = r.Id
             }).ToList();
-            userRolesDto.SelectRoleList = selectRoleList;
+            UserRolesDto userRolesDto = new UserRolesDto
+            {
+                SelectRoleList = selectRoleList,
+                Users = users
+            };
+            return userRolesDto;
+        }
+        public IActionResult UserRoles()
+        {
+            var userRolesDto = GetUserRolesDto();
+            ViewBag.SelectedMenu = "UserRoles";
+            ViewBag.Title = "Rol Atama";
+            return View(userRolesDto);
+        }
+        public async Task<IActionResult> GetUsers(UserRolesDto userRolesDto)
+        {
+            var role = await _roleManager.FindByIdAsync(userRolesDto.RoleId);
+            var members = new List<User>();
+            var nonMembers = new List<User>();
+            var userRolesDtoInstance = GetUserRolesDto();
+            foreach (var user in userRolesDtoInstance.Users)
+            {
+                var list = await _userManager.IsInRoleAsync(user, role.Name) ? members : nonMembers;
+                //bu role ait olan userları memberlar içine, ait olmayan userları nonmember'lar içerisine atacak
+                list.Add(user);
+            }
+            var roleDetailsDto = new RoleDetailsDto
+            {
+                Role = role,
+                Members = members,
+                NonMembers = nonMembers
+            };
+            userRolesDto.SelectRoleList = userRolesDtoInstance.SelectRoleList;
             userRolesDto.RoleDetailsDto = roleDetailsDto;
-            userRolesDto.Users = users;
+            userRolesDto.Users = userRolesDtoInstance.Users;
             return View("UserRoles", userRolesDto);
+
         }
     }
 }

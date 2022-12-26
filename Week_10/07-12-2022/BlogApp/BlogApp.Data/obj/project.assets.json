@@ -8398,19 +8398,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
+    "C:\\Users\\ozmen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+      "projectUniqueName": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
       "projectName": "BlogApp.Data",
-      "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
-      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Data\\obj\\",
+      "projectPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Data\\BlogApp.Data.csproj",
+      "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8424,11 +8424,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Entities\\BlogApp.Entities.csproj": {
-              "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Entities\\BlogApp.Entities.csproj"
+            "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Entities\\BlogApp.Entities.csproj": {
+              "projectPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Entities\\BlogApp.Entities.csproj"
             },
-            "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Shared\\BlogApp.Shared.csproj": {
-              "projectPath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Shared\\BlogApp.Shared.csproj"
+            "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Shared\\BlogApp.Shared.csproj": {
+              "projectPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_10\\07-12-2022\\BlogApp\\BlogApp.Shared\\BlogApp.Shared.csproj"
             }
           }
         }

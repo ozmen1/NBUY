@@ -128,6 +128,7 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
                 }
                 
             }
+
             return Redirect("/Admin/Role/Edit/" + roleEditDetailsDto.RoleId);
 
         }
@@ -186,6 +187,10 @@ namespace ShoppingApp.Web.Areas.Admin.Controllers
             userRolesDto.SelectRoleList = userRolesDtoInstance.SelectRoleList;
             userRolesDto.RoleDetailsDto= roleDetailsDto;
             userRolesDto.Users = userRolesDtoInstance.Users;
+            //if (ViewBag.SelectedMenu = "UserRoles")
+            //{
+            //    return RedirectToAction("GetUsers", "Role");
+            //}
             return View("UserRoles",userRolesDto);
 
         }

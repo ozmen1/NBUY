@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj": {}
+    "c:\\Users\\ozmen\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj": {
+    "c:\\Users\\ozmen\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj",
+        "projectUniqueName": "c:\\Users\\ozmen\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj",
         "projectName": "Proje03_VerilerinNesneyleTasinmasi",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj",
-        "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\obj\\",
+        "projectPath": "c:\\Users\\ozmen\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\Proje03_VerilerinNesneyleTasinmasi.csproj",
+        "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\ozmen\\GitHub\\NBUY\\Week_06\\2-DotNetCore-VeriTabaniİslemleri\\Proje03_VerilerinNesneyleTasinmasi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

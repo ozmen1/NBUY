@@ -18,11 +18,12 @@
                 <input class="form-control" asp-for="Description">
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            <div>
-                <button type="submit" class="btn btn-primary">Oluştur</button>
-                <a asp-area="Admin" asp-controller="Role" asp-action="Index" class="btn btn-light">Vazgeç</a>
-            </div>
+            <button type="submit" class="btn btn-primary">Oluştur</button>
+            <a type="button" class="btn btn-light"
+               asp-area="Admin"
+               asp-controller="Role"
+               asp-action="Index">Vazgeç</a>
         </div>
-    </div></>
+    </div>
 
 </form>

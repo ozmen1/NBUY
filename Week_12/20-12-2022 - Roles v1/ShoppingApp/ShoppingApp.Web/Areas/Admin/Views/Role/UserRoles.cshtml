@@ -18,6 +18,8 @@
       method="post">
         <input type="hidden" name="RoleId" value="@Model.RoleDetailsDto.Role.Id" /> @*//hangi rolle çalıştığımızın bilgisini verir.*@
         <input type="hidden" name="RoleName" value="@Model.RoleDetailsDto.Role.Name" />
+        <input type="hidden" name="From" value="@ViewBag.From" />
+
         <div class="row">
             <div class="col-6">
                 @*NonMembers*@

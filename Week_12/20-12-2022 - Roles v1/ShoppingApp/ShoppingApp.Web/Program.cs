@@ -108,7 +108,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "products",
-    pattern: "kategori/{categoryurl}",
+    pattern: "kategori/{categoryurl?}",
     defaults: new { controller = "Shop", action = "ProductList" }
     );
 
@@ -119,7 +119,7 @@ app.MapControllerRoute(
     );
 
 app.MapAreaControllerRoute(
-    name: "admin",
+    name: "Admin",
     areaName: "Admin",
     pattern: "Admin/{controller=Home}/{action=Index}/{id?}");
 
