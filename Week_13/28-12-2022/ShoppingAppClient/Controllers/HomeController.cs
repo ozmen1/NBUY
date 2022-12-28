@@ -52,5 +52,31 @@ namespace ShoppingAppClient.Controllers
             urunler = urunler.Where(u => u.Price >= 20000).ToList();
             return View("Index", urunler);
         }
+        public async Task<IActionResult> GetCategories()
+        {
+            var kategoriler = new List<CategoryViewModel>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync("http://localhost:5200/api/categories/"))
+                {
+                    string apiResponse = await response.Content.ReadAsStringAsync();
+                    kategoriler = JsonConvert.DeserializeObject<List<CategoryViewModel>>(apiResponse);
+                }
+            }
+            return View(kategoriler);
+        }
+        public async Task<IActionResult> GetProductsByCategory(int id)
+        {
+            var urunler = new List<ProductViewModel>();
+            using (var httpClient = new HttpClient())
+            {
+                using (var response = await httpClient.GetAsync($"http://localhost:5200/api/categories/{id}"))
+                {
+                    string stringResponse = await response.Content.ReadAsStringAsync();
+                    urunler = JsonConvert.DeserializeObject<List<ProductViewModel>>(stringResponse);
+                }
+            }
+            return View("Index", urunler);
+        }
     }
 }

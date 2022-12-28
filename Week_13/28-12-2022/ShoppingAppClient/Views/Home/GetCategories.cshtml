@@ -1,6 +1,6 @@
 ﻿@model List<CategoryViewModel>
 @{
-    ViewData["Title"] = "Kategoriler";
+    ViewData["Title"] = "Category Page";
 }
 
 <h1 class="display-6">Kategori Listesi</h1>
@@ -8,9 +8,8 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Kategori Adı</th>
+            <th>Ad</th>
             <th>Açıklama</th>
-            <th>Url</th>
         </tr>
     </thead>
     <tbody>
@@ -18,7 +17,11 @@
         {
             <tr>
                 <td>@category.Id</td>
-                <td>@category.Name</td>
+                <td>
+                    <a asp-controller="Home"
+                   asp-action="GetProductsByCategory"
+                   asp-route-id="@category.Id">@category.Name</a>
+                </td>
                 <td>@category.Description</td>
             </tr>
         }

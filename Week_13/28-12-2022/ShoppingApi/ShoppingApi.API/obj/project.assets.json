@@ -4559,19 +4559,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SABAH\\.nuget\\packages\\": {}
+    "C:\\Users\\ozmen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.API\\ShoppingApi.API.csproj",
+      "projectUniqueName": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.API\\ShoppingApi.API.csproj",
       "projectName": "ShoppingApi.API",
-      "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.API\\ShoppingApi.API.csproj",
-      "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.API\\obj\\",
+      "projectPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.API\\ShoppingApi.API.csproj",
+      "packagesPath": "C:\\Users\\ozmen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ozmen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4585,11 +4585,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Business\\ShoppingApi.Business.csproj": {
-              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Business\\ShoppingApi.Business.csproj"
+            "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Business\\ShoppingApi.Business.csproj": {
+              "projectPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Business\\ShoppingApi.Business.csproj"
             },
-            "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Core\\ShoppingApi.Core.csproj": {
-              "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Core\\ShoppingApi.Core.csproj"
+            "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Core\\ShoppingApi.Core.csproj": {
+              "projectPath": "C:\\Users\\ozmen\\GitHub\\NBUY\\Week_13\\28-12-2022\\ShoppingApi\\ShoppingApi.Core\\ShoppingApi.Core.csproj"
             }
           }
         }
