@@ -24,7 +24,7 @@ namespace ShoppingApp.Data.Concrete
 
         public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new EfCoreCategoryRepository(_context); //eğer varsa onu kullan yoksa şunu yarat
 
-        public IProductRepository Products => _productRepository = _productRepository ?? new EfCoreProductRepository(_context);
+        public IProductRepository Products => _productRepository = _productRepository ?? new EfCoreProductRepository(_context); 
 
         public void Dispose()
         {

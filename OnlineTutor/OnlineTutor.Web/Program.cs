@@ -1,15 +1,21 @@
+using OnlineTutor.Business.Abstract;
+using OnlineTutor.Business.Concrete;
+using OnlineTutor.Data.Abstract;
+using OnlineTutor.Data.Concrete;
+using OnlineTutor.Data.Concrete.EfCore.Contexts;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<OnlineTutorContext>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 

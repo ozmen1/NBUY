@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using OnlineTutor.Business.Abstract;
+using OnlineTutor.Entity.Concrete;
 using OnlineTutor.Web.Models;
 using System.Diagnostics;
 
@@ -6,27 +8,26 @@ namespace OnlineTutor.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private ICategoryService _categoryManager;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ICategoryService categoryManager)
         {
-            _logger = logger;
+            _categoryManager = categoryManager;
         }
-
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            List<Category> categories = await _categoryManager.GetAllAsync();
+            List<CategoryDto> categoryDtos = new List<CategoryDto>();
+            foreach (var category in categories)
+            {
+                categoryDtos.Add(new CategoryDto
+                {
+                    Id = category.Id,
+                    Name = category.Name,
+                    Description = category.Description
+                });
+            }
+            return View(categoryDtos);
         }
     }
 }

@@ -1,4 +1,4 @@
-namespace OnlineTutor.Web.Models
+﻿namespace OnlineTutor.Web.Models
 {
     public class ErrorViewModel
     {

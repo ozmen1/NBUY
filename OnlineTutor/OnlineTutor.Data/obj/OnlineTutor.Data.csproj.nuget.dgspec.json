@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj": {}
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj": {
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj",
+        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj",
         "projectName": "OnlineTutor.Data",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj",
+        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Data\\OnlineTutor.Data.csproj",
         "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Data\\obj\\",
+        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj": {
-                "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj"
+              "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj": {
+                "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj"
               }
             }
           }
@@ -79,14 +79,14 @@
         }
       }
     },
-    "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj": {
+    "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj",
         "projectName": "OnlineTutor.Entity",
-        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj",
+        "projectPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Entity\\OnlineTutor.Entity.csproj",
         "packagesPath": "C:\\Users\\SABAH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\OnlineTutor\\OnlineTutor.Entity\\obj\\",
+        "outputPath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\OnlineTutor\\OnlineTutor.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SABAH\\AppData\\Roaming\\NuGet\\NuGet.Config",
