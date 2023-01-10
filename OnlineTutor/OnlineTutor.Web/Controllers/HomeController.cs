@@ -8,26 +8,28 @@ namespace OnlineTutor.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private ICategoryService _categoryManager;
+        private readonly IShowCardService _showCardManager;
 
-        public HomeController(ICategoryService categoryManager)
+        public HomeController(IShowCardService showCardManager)
         {
-            _categoryManager = categoryManager;
+            _showCardManager = showCardManager;
         }
         public async Task<IActionResult> Index()
         {
-            List<Category> categories = await _categoryManager.GetAllAsync();
-            List<CategoryDto> categoryDtos = new List<CategoryDto>();
-            foreach (var category in categories)
+            List<ShowCard> showCards = await _showCardManager.GetAllAsync();
+            List<ShowCardDto> showCardDtos = new List<ShowCardDto>();
+            foreach (var showCard in showCards)
             {
-                categoryDtos.Add(new CategoryDto
+                showCardDtos.Add(new ShowCardDto
                 {
-                    Id = category.Id,
-                    Name = category.Name,
-                    Description = category.Description
+                    Id = showCard.Id,
+                    Title = showCard.Title,
+                    Description = showCard.Description,
+                    Price = showCard.Price,
+                    Url = showCard.Url
                 });
             }
-            return View(categoryDtos);
+            return View(showCardDtos);
         }
     }
 }

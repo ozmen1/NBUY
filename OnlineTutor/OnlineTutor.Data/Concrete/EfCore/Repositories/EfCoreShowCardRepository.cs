@@ -13,16 +13,17 @@ namespace OnlineTutor.Data.Concrete.EfCore.Repositories
     public class EfCoreShowCardRepository : EfCoreGenericRepository<ShowCard>, IShowCardRepository
     {
 
-        public EfCoreShowCardRepository(OnlineTutorContext context): base(context)
+        public EfCoreShowCardRepository(OnlineTutorContext context) : base(context)
         {
 
         }
+
+        private OnlineTutorContext OnlineTutorContext
+        {
+            get { return _context as OnlineTutorContext; }
+        }
+
         public Task CreateShowCardAsync(ShowCard showCard, int[] selectedCategoryIds)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<List<ShowCard>> GetAllShowCardsAsync()
         {
             throw new NotImplementedException();
         }

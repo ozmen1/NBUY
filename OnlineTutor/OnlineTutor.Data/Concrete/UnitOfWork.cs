@@ -21,11 +21,13 @@ namespace OnlineTutor.Data.Concrete
         private EfCoreCategoryRepository _categoryRepository;
         public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new EfCoreCategoryRepository(_context);
 
-        public IShowCardRepository ShowCards => throw new NotImplementedException();
+        private EfCoreShowCardRepository _showCardRepository;
+        public IShowCardRepository ShowCards => _showCardRepository = _showCardRepository ?? new EfCoreShowCardRepository(_context);
+
+        private EfCoreSubjectRepository _subjectRepository;
+        public ISubjectRepository Subjects => _subjectRepository = _subjectRepository ?? new EfCoreSubjectRepository(_context);
 
         public ITeacherRepository Teachers => throw new NotImplementedException();
-
-        public ISubjectRepository Subjects => throw new NotImplementedException();
 
         public IStudentRepository Students => throw new NotImplementedException();
 

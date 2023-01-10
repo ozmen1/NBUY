@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YfOvBoVQ5NEAa04LP02OM7j2GZxpz9YESxBVOB0J0dEhJAGqRpdap/djwTRTA9VwZo8ddstT2hdFKaYE5mXy5Q==",
+  "dgSpecHash": "yJTMJlykg+0tbAXef5zNkTolXViu59GEkq8w2xmIq1NbsutWqkZWO3H7VdqXHj8SB2HGyW5Q4a6povgOmi8ZVg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\27-12-2022\\ShoppingApp\\ShoppingApp.Business\\ShoppingApp.Business.csproj",
+  "projectFilePath": "C:\\Users\\SABAH\\Documents\\GitHub\\NBUY\\Week_13\\27-12-2022\\ShoppingApp\\ShoppingApp.Business\\ShoppingApp.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SABAH\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\SABAH\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

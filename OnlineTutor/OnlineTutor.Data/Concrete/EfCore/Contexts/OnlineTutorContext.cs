@@ -39,7 +39,6 @@ namespace OnlineTutor.Data.Concrete.EfCore.Contexts
             modelBuilder.ApplyConfiguration(new RequestConfig());
             modelBuilder.ApplyConfiguration(new ShowCardConfig());
 
-
             base.OnModelCreating(modelBuilder);  
         }
     }

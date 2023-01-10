@@ -10,6 +10,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<OnlineTutorContext>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<IShowCardService, ShowCardManager>();
+builder.Services.AddScoped<ISubjectService, SubjectManager>();
 
 var app = builder.Build();
 
