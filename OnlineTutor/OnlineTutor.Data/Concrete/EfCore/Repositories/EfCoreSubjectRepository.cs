@@ -27,16 +27,6 @@ namespace OnlineTutor.Data.Concrete.EfCore.Repositories
             throw new NotImplementedException();
         }
 
-        public async Task<List<Subject>> GetSubjectsByCategoryAsync(int id)
-        {
-            return await OnlineTutorContext
-                  .Subjects
-                  .Include(s => s.SubjectCategories)
-                  .ThenInclude(sc => sc.Category)
-                  .Where(x => x.SubjectCategories.Any(sc => sc.CategoryId == id))
-                   .ToListAsync();
-        }
-
         public Task<Subject> GetSubjectWithCategoryAsync(int id)
         {
             throw new NotImplementedException();

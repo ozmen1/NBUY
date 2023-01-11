@@ -11,9 +11,7 @@ namespace OnlineTutor.Business.Abstract
     {
         Task<List<Subject>> GetAllAsync();
         Task CreateAsync(Subject subject, int[] categoryIds);
-        Task<List<Subject>> GetSubjectsByCategoryAsync(int id);
         void Update(Subject subject, int[] categoryIds);
         void IsDeleted(Subject subject);
-        Task GetSubjectsByCategoryAsync(object id);
     }
 }

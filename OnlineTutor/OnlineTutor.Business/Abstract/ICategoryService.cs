@@ -15,5 +15,6 @@ namespace OnlineTutor.Business.Abstract
         void Update(Category category);
         void Delete(Category category);
         Category GetByIdWithShowCards();
+        Task<List<Category>> GetCategoriesWithSubjectsAsync(int id);
     }
 }

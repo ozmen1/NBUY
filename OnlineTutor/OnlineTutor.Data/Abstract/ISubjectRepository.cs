@@ -13,7 +13,6 @@ namespace OnlineTutor.Data.Abstract
         Task UpdateAsync(Subject subject, int[] categoryIds);
         void IsDeleted(Subject subject);
         Task<Subject> GetSubjectWithCategoryAsync(int id); //dersi kategorisi ile birlikte getir
-        Task<List<Subject>> GetSubjectsByCategoryAsync(int id); //kategoriye göre dersleri getir
         Task<List<Category>> GetSubjectWithShowCardsAsync(int id); //bir dersi ilanlarla birlikte getir
     }
 }

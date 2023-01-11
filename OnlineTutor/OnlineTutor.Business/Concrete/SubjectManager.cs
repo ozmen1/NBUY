@@ -26,11 +26,6 @@ namespace OnlineTutor.Business.Concrete
             return await _unitOfWork.Subjects.GetAllAsync();
         }
 
-        public async Task<List<Subject>> GetSubjectsByCategoryAsync(int id)
-        {
-            return await _unitOfWork.Subjects.GetSubjectsByCategoryAsync(id);
-        }
-
         public void IsDeleted(Subject subject)
         {
             throw new NotImplementedException();

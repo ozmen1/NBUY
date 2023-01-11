@@ -1,4 +1,5 @@
-﻿<header>
+﻿@model List<ShowCardWithCategoryDto>
+<header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
         <div class="container-fluid">
             <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">OnlineTutor</a>
@@ -11,7 +12,16 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a>
                     </li>
-                    @await Component.InvokeAsync("Categories")
+                    <li class="nav-item dropdown">
+                        @foreach (var sc in Model)
+                        {
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">@sc.CategoryDto</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                <li><a class="dropdown-item" href="#">@sc.CategoryDto</a></li>
+                            </ul>
+                        }
+
+                    </li>
                 </ul>
             </div>
         </div>
