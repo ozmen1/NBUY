@@ -2,6 +2,7 @@
 using OnlineTutor.Data.Abstract;
 using OnlineTutor.Data.Concrete.EfCore.Contexts;
 using OnlineTutor.Entity.Concrete;
+using OnlineTutor.Entity.Concrete.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,9 +29,13 @@ namespace OnlineTutor.Data.Concrete.EfCore.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<List<ShowCard>> GetHomePageShowCardsAsync()
+        public async Task<List<ShowCard>> GetHomePageShowCardsAsync()
         {
-            throw new NotImplementedException();
+            return await OnlineTutorContext
+                .ShowCards
+                .Include(sc3 => sc3.Teacher)
+                .Where(sc=>sc.IsHome)
+                .ToListAsync();
         }
 
         public Task<List<ShowCard>> GetProductsWithCategories()

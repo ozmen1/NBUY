@@ -16,5 +16,7 @@ namespace OnlineTutor.Entity.Concrete
         public List<Comment>? Comments { get; set; }
         public List<ShowCard>? ShowCards { get; set; }
         public string Url { get; set; }
+        //public User User { get; set; }
+        //public string UserId { get; set; }
     }
 }

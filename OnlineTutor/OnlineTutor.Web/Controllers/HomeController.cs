@@ -32,15 +32,16 @@ namespace OnlineTutor.Web.Controllers
                 Url = x.Url,
                 SubjectDtos = x.SubjectCategories.Select(x => new SubjectDto
                 {
-                    Id = x.Category.Id,
-                    Name = x.Category.Name,
-                    Description = x.Category.Description,
-                    Url = x.Category.Url
+                    Id = x.Subject.Id,
+                    Name = x.Subject.Name,
+                    Description = x.Subject.Description,
+                    Url = x.Subject.Url
                 }).ToList()
             }).ToList();
             
 
-            List<ShowCard> showCards = await _showCardManager.GetAllAsync();
+            List<ShowCard> showCards = await _showCardManager.GetHomePageShowCardsAsync();
+
             List<ShowCardDto> showCardDtos = new List<ShowCardDto>();
             foreach (var showCard in showCards)
             {
@@ -50,14 +51,15 @@ namespace OnlineTutor.Web.Controllers
                     Title = showCard.Title,
                     Description = showCard.Description,
                     Price = showCard.Price,
-                    Url = showCard.Url
+                    Url = showCard.Url,
+
                 });
             }
 
             ShowCardWithCategoryDto showCardWithCategoryDto = new ShowCardWithCategoryDto
             {
-                ShowCardDto = showCardDtos,
-                CategoryDto = categoryDtos
+                ShowCardDtos = showCardDtos,
+                CategoryDtos = categoryDtos
             };
             return View(showCardWithCategoryDto);
         }

@@ -26,28 +26,32 @@ namespace OnlineTutor.Data.Config
             builder.Property(t => t.Price)
                 .IsRequired();
 
+            builder.Property(t => t.IsHome);
+
             builder.ToTable("ShowCards");
 
             builder.HasData(
                   new ShowCard()
                   {
                       Id = 1,
-                      TeacherId = 1,
+                      TeacherId = "dc4ac19a-431c-40f1-a2df-cd49869e3559",
                       Title = "Online Matematik Dersi",
                       Description = "Lise, Üniversite matematik dersleri verilir.",
                       SubjectId = 1,
                       Url = "ozel-ders-1",
                       Price = 100,
+                      IsHome = true
                   },
                   new ShowCard()
                   {
                       Id = 2,
-                      TeacherId = 2,
+                      TeacherId = "fc4ac19b-331c-90f1-z2df-xd49869e3351",
                       Title = "Online İngilizce Dersi",
                       Description = "İngilizce anadilli hocadan ingilizce dersleri.",
                       SubjectId = 3,
                       Url = "ozel-ders-ing",
                       Price = 100,
+                      IsHome = false
                   }
                   );
         }

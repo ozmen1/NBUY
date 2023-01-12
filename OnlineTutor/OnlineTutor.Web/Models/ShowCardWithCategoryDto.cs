@@ -2,7 +2,7 @@
 {
     public class ShowCardWithCategoryDto
     {
-        public List<ShowCardDto> ShowCardDto { get; set; }
-        public List<CategoryDto> CategoryDto { get; set; }
+        public List<ShowCardDto> ShowCardDtos { get; set; }
+        public List<CategoryDto> CategoryDtos { get; set; }
     }
 }

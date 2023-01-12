@@ -13,9 +13,9 @@ namespace OnlineTutor.Entity.Concrete
         public string CommentText { get; set; }
         public byte Point { get; set; }
         public Teacher Teacher { get; set; }
-        public int TeacherId { get; set; }
+        public string TeacherId { get; set; }
         public Student Student { get; set; }
-        public int StudentId { get; set; }
+        public string StudentId { get; set; }
         public string Url { get; set; }
     }
 }
