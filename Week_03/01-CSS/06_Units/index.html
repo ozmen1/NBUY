@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Ölçü Birimleri: 
+    px, 
+
+    % (içinde bulunulan elementin boyutuna göre orantılı bir ölçü vermeyi sağlar), 
+    
+    cm, 
+
+    mm, 
+
+    in(2.54cm)(96px), 
+
+    pt(punto), 
+
+    pc(pika)(tipografik ölçü birimi)(12pt), 
+
+    em(ana ebeveyn etiketin font boyutuna göre ölçeklendirilerek belirlenen boyuttur. örneğin bir etiketin ana ebeveyni body ise ve body'nin font büyüklüğü 16px ayarlanmışsa, 1em dediğimde 16px'e denk gelir.), 
+
+    vh(viewport height)(tarayıcının yüksekliği ile orantılı bir ölçü vermeyi sağlar), 
+
+    vw(viewport weight)(tarayıcının genişliği ile orantılı bir ölçü vermeyi sağlar),
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 10px;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header, .footer{
+            background-color: #06283D;
+            padding-left: 20px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer{
+            height: 60px;
+            color: #fff;
+            font-size: 1.5em;
+        }
+
+        .header h1 {
+            color: goldenrod;
+            /* font-size: 60px; */
+            font-size: 6em;
+        }
+
+        .content {
+            display: flex;
+            margin-top: 10px;
+            height: calc(100vh - 200px);
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .content-left {
+            width: 25%;
+            font-size: 1.5em;
+        }
+
+        .content-left ul{
+            list-style-type: none;
+            padding: 0;
+            /* default margin'i sıfırladık */
+            margin: 0;
+        }
+
+        .content-left ul li{
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background-color: #256D85;
+            color: white;
+        }
+
+        .content-left ul li:hover{
+            cursor: pointer;
+            background-color: #2B4865;
+        }
+
+        .content-right {
+            width: 75%;
+            /* padding-left: 15px; */
+            font-size: 1.4em;
+        }
+
+        .content-right h1{
+            color: #002B5B;
+            margin: 0;
+            font-size: 2.3em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Frontend Dersleri</h1>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <h1>Uygulama Geliştirici Eğitimi</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos id maiores molestias eveniet aperiam rem qui aut cupiditate, sed sit officia excepturi consequuntur et blanditiis eaque, magni voluptatibus soluta nulla!</p>
+            </div>
+        </div>
+        <div class="footer">
+            Bu sayfa BAU Wissen Akademie öğrencileri tarafından tasarlanmıştır. 2022
+        </div>
+    </div>
+</body>
+
+</html>

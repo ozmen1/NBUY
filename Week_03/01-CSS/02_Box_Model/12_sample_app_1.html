@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .main-header {
+            background-color: tomato;
+            padding: 8px 16px;
+        }
+
+        .main-header-logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+        }
+
+        .main-nav {
+            display: inline-block;
+            text-align: right;
+            width: calc(100% - 190px);
+        }
+
+        .main-nav-items {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+
+        .main-nav-item {
+            display: inline-block;
+            margin: 0px 10px;
+        }
+
+        .main-nav-item a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main-nav-item a:hover {
+            color: rgb(38, 39, 59);
+        }
+
+        .main-nav-item-login a {
+            background-color: teal;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+
+        }
+
+        .main-nav-item-login a:hover {
+            color: teal;
+            background-color: #fff;
+            border: 2px solid teal;
+        }
+
+        #showcase {
+            background-image: url("/00_Images/home-bg.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(38, 39, 59);
+            background-position: center;
+            color: aliceblue;
+            padding: 10px;
+            width: 100%;
+            height: 60vh;
+            /* height: 400px; */
+        }
+
+        #showcase h1 {
+            background: rgba(000, 000, 000, 0.5);
+            color: white;
+            display: inline;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        #how-it-works {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            color: #3e4555;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .row {
+            margin-bottom: 40px;
+        }
+
+        .col {
+            display: inline-block;
+            width: 30%;
+            margin: 8px;
+            padding: 16px;
+        }
+
+        .icon-box i {
+            color: tomato;
+            padding: 10px;
+            font-size: 50px;
+            border-radius: 5px;
+        }
+
+        .icon-box h3 {
+            color: #3e4555;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="main-header">
+            <!--Burası sayfamızın üst kısmı-->
+            <a href="#" class="main-header-logo">Movie Application</a>
+            <nav class="main-nav">
+                <ul class="main-nav-items">
+                    <li class="main-nav-item"><a href="#">Home</a></li>
+                    <li class="main-nav-item"><a href="#">Movies</a></li>
+                    <li class="main-nav-item"><a href="#">Contact</a></li>
+                    <li class="main-nav-item main-nav-item-login"><a href="#"><i
+                                class="fa-solid fa-arrow-right-to-bracket"></i> Login </a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!--Burası sayfamızın ana içerik kısmı-->
+            <section id="showcase">
+                <h1>Welcome to Movie Application</h1>
+            </section>
+            <section id="how-it-works">
+                <div class="row">
+                    <h2>How it works?</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque modi, laboriosam, ea nobis culpa
+                        iusto corporis sequi tenetur autem eveniet ipsam voluptas. Sint sapiente quasi, ea saepe quae
+                        quod cupiditate!</p>
+                    <div class="row">
+                        <div class="icon-box col">
+                            <i class="fa-regular fa-address-card"></i>
+                            <h3>Register</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, harum quisquam
+                                ratione hic minima modi sed dicta illo excepturi, sint blanditiis. Sapiente, alias
+                                ipsum. Necessitatibus, eum. Nulla, veritatis eum!</p>
+                        </div>
+                        <div class="icon-box col">
+                            <i class="fa-solid fa-square-check" style="font-size: 90px;"></i>
+                            <h3>Choose a Plan</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, harum quisquam
+                                ratione hic minima modi sed dicta illo excepturi, sint blanditiis. Sapiente, alias
+                                ipsum. Necessitatibus, eum. Nulla, veritatis eum!</p>
+                        </div>
+                        <div class="icon-box col">
+                            <i class="fa-solid fa-film"></i>
+                            <h3>Enjoy Movies</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officia, harum quisquam
+                                ratione hic minima modi sed dicta illo excepturi, sint blanditiis. Sapiente, alias
+                                ipsum. Necessitatibus, eum. Nulla, veritatis eum!</p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

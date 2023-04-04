@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Sample</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .modal{
+            width: 400px;
+            height: 250px;
+            background-color: wheat;
+            border: 1px solid navy;
+            border-radius: 5px;
+            position: relative;
+            top: 150px;
+            left: 150px;
+            padding: 5px;
+        }
+        .x-button{
+            top: 5px;
+            right: 5px;
+            position: absolute;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .message{
+            position: absolute;
+            top: 95px;
+            left: 65px;
+        }
+
+        .close-button{
+            position: absolute;
+            bottom: 10px;
+            left: 185px;
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 7px 10px;
+            border-radius: 5px;
+        }
+
+        .uyari{
+            position: absolute;
+            background-color: blue;
+            top: -17px;
+            left: 0px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            color: white;
+            padding-right: 321px;
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <p class="uyari">Hatalı işlem!</p>
+        <button class="x-button">X</button>
+        <p class="message">Kapatmak için aşağıdaki butona tıklayınız</p>
+        <button class="close-button">Close</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@model List<Author>
+@{
+    ViewData["Title"] = "Author";
+}
+
+<h1 class="display-6">Product List</h1>
+<hr>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Doğum Yılı</th>
+            <th>Cinsiyet</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model)
+        {
+            <tr>
+                <td>@a.Id</td>
+                <td>@a.Ad</td>
+                <td>@a.DogumYili</td>
+                <td>@a.Cinsiyet</td>
+            </tr>
+        }
+    </tbody>
+</table>

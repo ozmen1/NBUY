@@ -1,0 +1,70 @@
+@model Kitap
+@{
+    ViewData["Title"] = "Kitap Güncelle";
+}
+
+<h1 class="display-6">Kitap Güncelle</h1>
+<hr>
+<form asp-controller="Home" asp-action="KitapGuncelle" method="post">
+    <div class="row mb-2">
+        <div class="col-2">
+            <label asp-for="Ad" class="form-label"></label>
+        </div>
+        <div class="col-4">
+            <input type="text" asp-for="Ad" class="form-control">
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-2">
+            <label class="form-label">Yazar</label>
+        </div>
+        <div class="col-4">
+            <select asp-for="YazarId" class="form-select" aria-label="Default select example">
+                <option selected>Yazar seçiniz</option>
+                @foreach (var yazar in ViewBag.Yazarlar)
+                {
+                    <option value="@yazar.Id">@yazar.Ad</option>
+                }
+            </select>
+        </div>
+    </div>
+    
+    <div class="row mb-2">
+        <div class="col-2">
+            <label asp-for="BasimYili" class="form-label"></label>
+        </div>
+        <div class="col-4">
+            <input type="text" asp-for="BasimYili" class="form-control">
+        </div>
+    </div>
+
+        <div class="row mb-2">
+        <div class="col-2">
+            <label asp-for="SayfaSayisi" class="form-label"></label>
+        </div>
+        <div class="col-4">
+            <input type="text" asp-for="SayfaSayisi" class="form-control">
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-2">
+            <label class="form-label">Kategori</label>
+        </div>
+        <div class="col-4">
+            <select asp-for="KategoriId" class="form-select" aria-label="Default select example">
+                <option selected>Kategori seçiniz</option>
+                @foreach (var kategori in ViewBag.Kategoriler)
+                {
+                    <option value="@kategori.Id">@kategori.Ad</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-4 offset-2">
+            <input type="submit" class="btn btn-primary" value="Güncelle">
+        </div>
+    </div>
+</form>
